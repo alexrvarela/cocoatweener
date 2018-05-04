@@ -120,14 +120,14 @@
 -(void)play
 {
     printf("Timeline play\n");
-    if (self.state != kTimelineStatePaused)
+    if (![self isAdded])
     {
-        printf("is paused\n");
-         if(![self isAdded])
-             [CocoaTweener addTimeline:self delay:0.0f];
+        // && self.state != kTimelineStatePaused
+        printf("not added, play\n");
+        [CocoaTweener addTimeline:self delay:0.0f];
     }else
     {
-        printf("paused\n");
+        printf("is paused, resume\n");
         [CocoaTweener resumeTimeline:self];
     }
 }
@@ -142,7 +142,15 @@
 -(void)rewind
 {
     printf("Timeline rewind\n");
-    if(![self isAdded])[CocoaTweener setCurrentTime:0.0f toTimeline:self];
+    if(![self isAdded])
+    {
+        [CocoaTweener setCurrentTime:0.0f toTimeline:self];
+    }
+    else
+    {
+        [self stop];
+        [self play];
+    }
 }
 
 -(void)stop

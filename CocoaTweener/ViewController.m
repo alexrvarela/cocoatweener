@@ -47,6 +47,9 @@
                                                                           40.0f)];
         [prevButton setTitle:@"PREV" forState:UIControlStateNormal];
         [prevButton addTarget:self action:@selector(prev) forControlEvents:UIControlEventTouchUpInside];
+        prevButton.layer.cornerRadius = 7.0f;
+        prevButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        prevButton.layer.borderWidth = 2.0f;
         [self.view addSubview:prevButton];
         
         UIButton* nextButton = [[UIButton alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width - buttonWidth -spacing,
@@ -55,6 +58,9 @@
                                                                           40.0f)];
         [nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
         [nextButton addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
+        nextButton.layer.cornerRadius = 7.0f;
+        nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
+        nextButton.layer.borderWidth = 2.0f;
         [self.view addSubview:nextButton];
         
         

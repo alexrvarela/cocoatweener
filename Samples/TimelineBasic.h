@@ -20,10 +20,6 @@
 
 @property (strong) Timeline* timeline;
 
-@property float asset_3_rotation;
-
--(void)onStartExample;
--(void)onUpdateExample;
--(void)onCompleteExample;
+@property float asset_3_rotation;//special property
 
 @end

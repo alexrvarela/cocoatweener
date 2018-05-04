@@ -38,33 +38,17 @@
 
 -(void)onUpdateExample
 {
-    //onUpdate
-    //printf("call update inside target : %f\n", self.specialProperty);
     
-
 }
 
 -(void)setRotationAngle:(float)rotationAngle
 {
     _rotationAngle = rotationAngle;
-    
-    /*
-     self.layer.transform = CATransform3DMakeRotation ((self.specialProperty * 360.0f) * M_PI / 180.0,
-     0.0f,
-     0.0f,
-     1.0f);
-     //*/
-    
     self.transform = CGAffineTransformMakeRotation((_rotationAngle * 360.0f) * M_PI / 180.0);
-    
-    printf("interpolation : %f\n", self.rotationAngle);
-    printf("transform m : %s\n", NSStringFromCGAffineTransform(self.transform).UTF8String);
 }
 
 -(void)onCompleteExample
 {
-    //onComplete
-    printf("ons complete\n");
     self.backgroundColor = [UIColor greenColor];
 }
 

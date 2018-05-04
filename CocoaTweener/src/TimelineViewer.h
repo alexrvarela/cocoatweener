@@ -21,6 +21,8 @@
 @property (strong) UILabel* timeLabel;
 @property (strong) UIControl* playButton;
 @property (strong) UIControl* playModeButton;
+@property (strong) UIControl* directionButton;
+@property (strong) UIControl* stopButton;
 @property (strong) UIControl* logButton;
 @property (strong) UIControl* hideButton;
 
@@ -31,7 +33,6 @@
 @property float touchArea;
 @property int indexTouched;
 @property int editMode;
-@property int tweenBarHeigth;
 //TODO:scroll timeline content
 @property CGPoint contentOffset;
 

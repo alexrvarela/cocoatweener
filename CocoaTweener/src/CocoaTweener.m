@@ -138,15 +138,17 @@ static BOOL autoOverwrite = YES;
 +(void)pauseTimeline:(Timeline*)timeline
 {
     timeline.timePaused = timeline.timeCurrent - timeline.timeStart;
-    timeline.state = kTimelineStatePaused;
+    if(timeline.state != kTimelineStatePaused)timeline.state = kTimelineStatePaused;
 }
 
 +(void)resumeTimeline:(Timeline*)timeline
 {
-    if([timelineList indexOfObject:timeline] == NSNotFound)
-        [CocoaTweener addTimeline:timeline delay:-timeline.timePaused];
+    float timeStart = timeline.reverse ? -(timeline.duration - timeline.timePaused) : -timeline.timePaused;
     
-    [self resetTime:timeline delay:-timeline.timePaused];
+    if([timelineList indexOfObject:timeline] == NSNotFound)
+        [CocoaTweener addTimeline:timeline delay: timeStart];
+    
+    [self resetTime:timeline delay:timeStart];
     timeline.state = timeline.lastState;
 }
 
@@ -184,10 +186,6 @@ static BOOL autoOverwrite = YES;
     if(cTime < 0.0f)currentTime = 0.0f;
     if(cTime > timeline.duration)cTime = timeline.duration;
     
-    //Remove from runloop
-    if ([self getTimelineIndex:timeline] != NSNotFound)
-        [self removeTimeline:timeline];
-
     //reset timestart
     if(timeline.timeStart > 0)timeline.timeStart = 0.0f;
     
@@ -266,7 +264,7 @@ static BOOL autoOverwrite = YES;
                     else
                     {
                         //printf("timeline has started\n");
-                        
+                        timeline.state = kTimelineStateStarted;
                         float timelineTime = [self getCurrentTime] - timeline.timeStart;
                         //float reverseTime  = timeline.timeComplete - timelineTime;
                         
@@ -292,13 +290,7 @@ static BOOL autoOverwrite = YES;
                             
                             TweenControl* tc = [timeline.controllerList objectAtIndex:indexTween];
                             
-                            //printf("\nTween index : %i\n", indexTween);
-                            //printf("Tween time start : %f\n", tc.timeStart);
-                            //printf("Tween time complete : %f\n", tc.timeComplete);
-                            //*/
-                            
-                            //printf("Tween started, update.");
-                            //Ignore if tween is paused or not, because is controlled by timeline
+                            //Ignore if tween is paused or not, controlled by timeline
                             if (!timeline.reverse)
                             {
                                 //Use engine

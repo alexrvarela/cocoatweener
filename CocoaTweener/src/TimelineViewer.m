@@ -16,8 +16,10 @@
 #define RADIANS_TO_DEGREES(__RADIAN__) ((__RADIAN__) * 180 / M_PI)
 
 #define CONTROL_BAR_HEIGHT 40.0f
-#define CONTROL_BUTTON_WIDTH 60.0f
+//#define CONTROL_BUTTON_WIDTH 40.0f
 #define TIME_BAR_HEIGHT 35.0f
+#define TWEEN_BAR_HEIGHT 25.0f
+
 
 #define SOLID_GRAY  [UIColor colorWithRed:182.0f / 255.0f green:182.0f / 255.0f blue:182.0f / 255.0f alpha:1.0f]
 #define TRANSPARENT_SOLID_GRAY  [UIColor colorWithRed:182.0f / 255.0f green:182.0f / 255.0f blue:182.0f / 255.0f alpha:0.5f]
@@ -89,6 +91,7 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     
     return path;
 }
+
 -(UIBezierPath*)makePauseIcon:(CGPoint)origin
 {
     UIBezierPath* path = [[UIBezierPath alloc] init];
@@ -102,17 +105,43 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     return path;
 }
 
+-(UIBezierPath*)makeRewindIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 8, origin.y - 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x - 8, origin.y + 8.0f)];
+    
+    [path moveToPoint:CGPointMake(origin.x + 8.9285f, origin.y - 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x - 4.9285f, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x + 8.9285f, origin.y + 8.0f)];
+    [path closePath];
+    
+    return path;
+}
+-(UIBezierPath*)makeStopIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 6, origin.y - 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x - 6, origin.y + 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x + 6, origin.y - 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x + 6, origin.y + 8.0f)];
+    [path closePath];
+    
+    return path;
+}
+
 -(UIBezierPath*)makePlayOnceIcon:(CGPoint)origin
 {
     UIBezierPath* path = [[UIBezierPath alloc] init];
     
-    [path moveToPoint:CGPointMake(origin.x - 13, origin.y)];
-    [path addLineToPoint:CGPointMake(origin.x + 7, origin.y)];
+    [path moveToPoint:CGPointMake(origin.x, origin.y + 6)];
+    [path addLineToPoint:CGPointMake(origin.x, origin.y - 6)];
+    [path addLineToPoint:CGPointMake(origin.x - 3, origin.y - 6)];
     
-    [path moveToPoint:CGPointMake(origin.x + 7, origin.y - 3.4635f)];
-    [path addLineToPoint:CGPointMake(origin.x + 13, origin.y)];
-    [path addLineToPoint:CGPointMake(origin.x + 7, origin.y + 3.4635f)];
-    [path closePath];
+    [path moveToPoint:CGPointMake(origin.x - 4, origin.y + 6)];
+    [path addLineToPoint:CGPointMake(origin.x + 4, origin.y + 6)];
     
     return path;
 }
@@ -162,6 +191,72 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     return path;
 }
 
+-(UIBezierPath*)makeFowardIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 13, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x + 7, origin.y)];
+    
+    [path moveToPoint:CGPointMake(origin.x + 7, origin.y - 3.4635f)];
+    [path addLineToPoint:CGPointMake(origin.x + 13, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x + 7, origin.y + 3.4635f)];
+    [path closePath];
+    
+    return path;
+}
+
+-(UIBezierPath*)makeBackwardIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 7, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x + 13, origin.y)];
+    
+    [path moveToPoint:CGPointMake(origin.x - 7, origin.y - 3.4635f)];
+    [path addLineToPoint:CGPointMake(origin.x - 13, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x - 7, origin.y + 3.4635f)];
+    [path closePath];
+    
+    return path;
+}
+
+-(UIBezierPath*)makeLogIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 14.0f, origin.y - 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x - 2.0f, origin.y)];
+    [path addLineToPoint:CGPointMake(origin.x - 14.0f, origin.y + 8.0f)];
+
+    [path moveToPoint:CGPointMake(origin.x + 2.0f, origin.y + 8.0f)];
+    [path addLineToPoint:CGPointMake(origin.x + 14.0f, origin.y + 8.0f)];
+    
+    return path;
+}
+
+-(UIBezierPath*)makeHideIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 12.0f, origin.y - 6.0f)];
+    [path addLineToPoint:CGPointMake(origin.x, origin.y + 6.0f)];
+    [path addLineToPoint:CGPointMake(origin.x + 12.0f, origin.y - 6.0f)];
+    
+    return path;
+}
+
+-(UIBezierPath*)makeShowIcon:(CGPoint)origin
+{
+    UIBezierPath* path = [[UIBezierPath alloc] init];
+    
+    [path moveToPoint:CGPointMake(origin.x - 12.0f, origin.y + 6.0f)];
+    [path addLineToPoint:CGPointMake(origin.x, origin.y - 6.0f)];
+    [path addLineToPoint:CGPointMake(origin.x + 12.0f, origin.y + 6.0f)];
+    
+    return path;
+}
+
 -(CAShapeLayer*)makeShapeLayer:(UIBezierPath*)path
 {
     CAShapeLayer* shapeLayer = [[CAShapeLayer alloc] init];
@@ -175,8 +270,18 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     return shapeLayer;
 }
 
--(id)initWithFrame:(CGRect)frame
+-(id)init
 {
+    float h = CONTROL_BAR_HEIGHT + TIME_BAR_HEIGHT + TWEEN_BAR_HEIGHT * 4.0f;
+    
+    CGRect frame = CGRectMake(0.0f,
+                              UIScreen.mainScreen.bounds.size.height - h,
+                              UIScreen.mainScreen.bounds.size.width,
+                              h);
+    
+    printf("timeline viewer screen w : %f\n", UIScreen.mainScreen.bounds.size.width);
+    printf("timeline viewer self w : %f\n", frame.size.width);
+    
     self = [super initWithFrame:frame];
     
     if (self)
@@ -186,7 +291,6 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         self.indexTouched = -1;
         //self.indexPresed = -1;
         self.scale = 100;
-        self.tweenBarHeigth = 25.0f;
         
         //use UIScrollView to navigate
         UIPinchGestureRecognizer* pinchRecognizer = [[UIPinchGestureRecognizer alloc]
@@ -242,15 +346,15 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         shape.path = path.CGPath;
         
         [self.timeIndicator.layer addSublayer:shape];
-        
         [self addSubview:self.timeIndicator];
         
+        float buttonWidth =  (frame.size.width / 7.0f);//- 6.0f
+        CGPoint centerShape = CGPointMake(buttonWidth / 2.0f, CONTROL_BAR_HEIGHT / 2.0f);
         
-        CGPoint centerShape = CGPointMake(CONTROL_BUTTON_WIDTH / 2.0f, CONTROL_BAR_HEIGHT / 2.0f);
-        
+        //PLAY/PAUSE CONTROL
         self.playButton = [[UIControl alloc] initWithFrame:CGRectMake(0.0f,
                                                                       0.0f,
-                                                                      CONTROL_BUTTON_WIDTH,
+                                                                      buttonWidth,
                                                                       CONTROL_BAR_HEIGHT)];
         
         [self.playButton addTarget:self action:@selector(playAction) forControlEvents:UIControlEventTouchUpInside];
@@ -260,9 +364,10 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         [[self.playButton.layer sublayers] objectAtIndex:0].hidden = NO;//show first by default
         [self addSubview:self.playButton];
         
-        self.playModeButton = [[UIControl alloc] initWithFrame:CGRectMake(CONTROL_BUTTON_WIDTH + 1.0f,
+        //PLAY MODE CONTROL
+        self.playModeButton = [[UIControl alloc] initWithFrame:CGRectMake(buttonWidth + 1.0f,
                                                                           0.0f,
-                                                                          CONTROL_BUTTON_WIDTH,
+                                                                          buttonWidth,
                                                                           CONTROL_BAR_HEIGHT)];
         self.playModeButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
         [self.playModeButton addTarget:self action:@selector(playModeAction) forControlEvents:UIControlEventTouchUpInside];
@@ -274,10 +379,25 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         
         [self addSubview:self.playModeButton];
         
+        //DIRECTION CONTROL
+        self.directionButton = [[UIControl alloc] initWithFrame:CGRectMake((buttonWidth + 1.0f) * 2.0f,
+                                                                          0.0f,
+                                                                          buttonWidth,
+                                                                          CONTROL_BAR_HEIGHT)];
+        self.directionButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
+        [self.directionButton addTarget:self action:@selector(playDirectionAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.directionButton.layer addSublayer:[self makeShapeLayer:[self makeFowardIcon:centerShape]]];
+        [self.directionButton.layer addSublayer:[self makeShapeLayer:[self makeBackwardIcon:centerShape]]];
+        
+        [[self.directionButton.layer sublayers] objectAtIndex:0].hidden = NO;//show first by default
+        
+        [self addSubview:self.directionButton];
 
-        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake(CONTROL_BUTTON_WIDTH * 2 + 1.0f,
+        
+        
+        self.timeLabel = [[UILabel alloc] initWithFrame:CGRectMake((buttonWidth + 1.0f) * 3.0f,
                                                                    0.0f,
-                                                                   CONTROL_BUTTON_WIDTH,
+                                                                   buttonWidth,
                                                                    CONTROL_BAR_HEIGHT)];
         self.timeLabel.font = [UIFont fontWithName:@"Menlo-Regular" size:12.0f];
         //self.timeLabel.font = [UIFont systemFontOfSize:12.0f weight:UIFontWeightBold];
@@ -286,22 +406,38 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         self.timeLabel.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.timeLabel];
         
-        self.logButton = [[UIControl alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - (CONTROL_BUTTON_WIDTH * 2.0f + 1.0f),
+        //STOP/REWIND CONTROL
+        self.stopButton = [[UIControl alloc] initWithFrame:CGRectMake((buttonWidth + 1.0f) * 4.0f,
+                                                                      0.0f,
+                                                                      buttonWidth,
+                                                                      CONTROL_BAR_HEIGHT)];
+        
+        [self.stopButton addTarget:self action:@selector(stopAction) forControlEvents:UIControlEventTouchUpInside];
+        self.stopButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
+        [self.stopButton.layer addSublayer:[self makeShapeLayer:[self makeRewindIcon:centerShape]]];
+        [self.stopButton.layer addSublayer:[self makeShapeLayer:[self makeStopIcon:centerShape]]];
+        [[self.stopButton.layer sublayers] objectAtIndex:0].hidden = NO;//show first by default
+        [self addSubview:self.stopButton];
+        
+        self.logButton = [[UIControl alloc] initWithFrame:CGRectMake((buttonWidth + 1.0f) * 5.0f,
                                                                      0.0f,
-                                                                     CONTROL_BUTTON_WIDTH,
+                                                                     buttonWidth,
                                                                      CONTROL_BAR_HEIGHT)];
-        
-        
-        self.logButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
         [self.logButton addTarget:self action:@selector(logAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.logButton.layer addSublayer:[self makeShapeLayer:[self makeLogIcon:centerShape]]];
+        self.logButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
+        [[self.logButton.layer sublayers] objectAtIndex:0].hidden = NO;//show first by default
         [self addSubview:self.logButton];
         
-        self.hideButton = [[UIControl alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - CONTROL_BUTTON_WIDTH,
+        self.hideButton = [[UIControl alloc] initWithFrame:CGRectMake((buttonWidth + 1.0f) * 6.0f,
                                                                        0.0f,
-                                                                       CONTROL_BUTTON_WIDTH,
+                                                                       buttonWidth,
                                                                        CONTROL_BAR_HEIGHT)];
         [self.hideButton addTarget:self action:@selector(hideAction) forControlEvents:UIControlEventTouchUpInside];
+        [self.hideButton.layer addSublayer:[self makeShapeLayer:[self makeHideIcon:centerShape]]];
+        [self.hideButton.layer addSublayer:[self makeShapeLayer:[self makeShowIcon:centerShape]]];
         self.hideButton.backgroundColor = TRANSPARENT_LIGHT_GRAY;
+        [[self.hideButton.layer sublayers] objectAtIndex:0].hidden = NO;//show first by default
         [self addSubview:self.hideButton];
 
         self.contentOffset = CGPointZero;
@@ -332,6 +468,11 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         
         [_timeline addObserver:self
                     forKeyPath:@"playMode"
+                       options:NSKeyValueObservingOptionNew
+                       context:NULL];//observe play mode
+        
+        [_timeline addObserver:self
+                    forKeyPath:@"reverse"
                        options:NSKeyValueObservingOptionNew
                        context:NULL];//observe play mode
         
@@ -371,7 +512,8 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     CGContextRestoreGState(context);
     
     //Draw time bar gird with numbers as seconds
-    int steps = roundf( (self.frame.size.width / UIScreen.mainScreen.scale + 100.0f) / self.scale );
+    /// UIScreen.mainScreen.scale
+    int steps = roundf( (self.frame.size.width ) / self.scale );
     //printf("draw steps %i\n", steps);
     //TODO:catch content offset and set index to start
     
@@ -379,7 +521,7 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     CGContextSetFillColor(context, CGColorGetComponents(self.uiColor.CGColor));
     
     //draw lines
-    for (int indexSecond = 0; indexSecond < steps; indexSecond++)
+    for (int indexSecond = 0; indexSecond < steps + 1; indexSecond++)
     {
         //Translate
         if(indexSecond != 0)CGContextTranslateCTM(context, self.scale, 0.0f);
@@ -419,7 +561,7 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     CGContextTranslateCTM(context, - 6.0f, CONTROL_BAR_HEIGHT + 5.0f);
     
     //draw lines
-    for (int indexSecond = 0; indexSecond < steps; indexSecond++)
+    for (int indexSecond = 0; indexSecond < steps + 1; indexSecond++)
     {
         //Translate
         if(indexSecond != 0)CGContextTranslateCTM(context, self.scale, 0.0f);
@@ -457,9 +599,9 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
                                                             : self.uiColor.CGColor));
         
         CGPathRef path =  CGPathMakeRoundRect(CGRectMake(tc.tween.timeDelay * self.scale,
-                                                         base_y + (self.tweenBarHeigth * indexTween) + 1.0f,
+                                                         base_y + (TWEEN_BAR_HEIGHT * indexTween) + 1.0f,
                                                          tc.tween.duration * self.scale,
-                                                         self.tweenBarHeigth - 1.0f),
+                                                         TWEEN_BAR_HEIGHT - 1.0f),
                                               5.0f);
         CGContextAddPath(context, path);
         CGContextFillPath(context);
@@ -605,7 +747,7 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
                 {
                     //change duration
                     float newDuration = self.backupDuration + (translation.x / self.scale);
-                    tc.tween.duration = (newDuration < self.backupTimeDelay) ? self.backupTimeDelay : newDuration;
+                    tc.tween.duration = (newDuration < 0.1f) ? 0.1f : newDuration;
                 }
                 else if (self.editMode == 2)
                 {
@@ -613,8 +755,12 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
                     float newDelay = self.backupTimeDelay + (translation.x / self.scale);
                     float newDuration = self.backupDuration - (translation.x / self.scale);
                     
-                    tc.tween.timeDelay = (newDelay < 0.0f) ? 0.0f : newDelay;
-                    tc.tween.duration = (newDuration < self.backupTimeDelay) ? self.backupTimeDelay : newDuration;
+                    if (newDelay < ((self.backupTimeDelay + self.backupDuration) - 0.1f))
+                    {
+                        tc.tween.timeDelay = (newDelay < 0.0f) ? 0.0f : newDelay;
+                        tc.tween.duration = newDuration;
+                    }
+                    //(newDuration < self.backupTimeDelay) ? self.backupTimeDelay : newDuration;
                 }
                 else
                 {
@@ -719,9 +865,9 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
             float edgeTolerance = 10.0f;
             
             if (CGRectContainsPoint(CGRectMake(tween.tween.timeDelay * self.scale - edgeTolerance,
-                                               base_y + (self.tweenBarHeigth * indexTween) + 1.0f,
+                                               base_y + (TWEEN_BAR_HEIGHT * indexTween) + 1.0f,
                                                tween.tween.duration * self.scale + edgeTolerance * 2.0f,
-                                               self.tweenBarHeigth - 1.0f),
+                                               TWEEN_BAR_HEIGHT - 1.0f),
                                     p))
             {
                 //printf("Tween index : %i touched!\n", indexTween);
@@ -794,8 +940,8 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
 -(void)playAction
 {
     printf("\nplay action\n");
-    
-    if(self.timeline.state == kTimelineStateInitial || self.timeline.state == kTimelineStateStarted)
+    //self.timeline.state == kTimelineStateInitial || self.timeline.state == kTimelineStateStarted
+    if([self.timeline isAdded] && self.timeline.state != kTimelineStatePaused)
     {
         printf("pause\n");
         [self.timeline pause];
@@ -807,10 +953,17 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     }
 }
 
+-(void)stopAction
+{
+    printf("\nstop action\n");
+    [self.timeline rewind];
+}
+
+
 -(void)updatePlayButtonIcons
 {
     BOOL stopped = self.timeline.state == kTimelineStatePaused || self.timeline.state == kTimelineStateOver;
-    printf("stopped? %s\n", stopped ? "yes" : "no");
+    //printf("stopped? %s\n", stopped ? "yes" : "no");
     [[self.playButton.layer sublayers] objectAtIndex:0].hidden = !stopped;
     [[self.playButton.layer sublayers] objectAtIndex:1].hidden = stopped;
 }
@@ -826,6 +979,12 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     
 }
 
+-(void)updateDirectionIcons
+{
+    [[self.directionButton.layer sublayers] objectAtIndex:0].hidden = self.timeline.reverse;
+    [[self.directionButton.layer sublayers] objectAtIndex:1].hidden = !self.timeline.reverse;
+}
+
 -(void)playModeAction
 {
     self.timeline.playMode = ((int)self.timeline.playMode < (int)kTimelinePlayModePingPong)
@@ -835,14 +994,73 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     printf("play mode action %i\n", (int)self.timeline.playMode);
 }
 
+-(void)playDirectionAction
+{
+    self.timeline.reverse = !self.timeline.reverse;
+    printf("play direction action %i\n", (int)self.timeline.playMode);
+}
+
 -(void)logAction
 {
-    printf("log tween code action\n");
+    printf("Log tweens code:\n");
+    NSMutableString* logString = [[NSMutableString alloc] init];
+    for(TweenControl* c in self.timeline.controllerList)
+    {
+        NSString* tweenName = [NSString stringWithFormat:@"tween%i", (int)[self.timeline.controllerList indexOfObject:c]];
+        
+        //initial values
+        NSMutableString* values = [[NSMutableString alloc] initWithString:@""];
+
+        //keys
+        NSMutableString* keys = [[NSMutableString alloc] initWithString:@"NSDictionary *keys = @{\n"];;
+        NSArray* allKeys = c.tween.keys.allKeys;
+        
+        for (int indexKey =  0; indexKey < allKeys.count; indexKey++)
+        {
+            //values
+            
+            //keys
+            NSString* keyName = [allKeys objectAtIndex:indexKey];
+            
+            [values appendString:[NSString stringWithFormat:@"[target].%@ = %@\n",//todo format value
+                                  keyName,
+                                  [c.tween.keys valueForKey:keyName]]];
+            
+            
+            [keys appendString:@"   "];
+            [keys appendString:[NSString stringWithFormat:@"@\"%@\" : [NSValue valueWith:%@]\n",//todo format
+                                keyName,
+                                [c.tween.keys valueForKey:keyName]]];
+
+        }
+        
+        [keys appendString:@"};\n"];
+        
+        //tween  params
+        NSMutableString* tween = [[NSMutableString alloc] init];
+
+        [logString appendString:[NSString stringWithFormat:@"Tween* %@ = [[Tween alloc] init:[target]\n\
+    duration:?\n\
+    ease:?\n\
+    keys:keys\n\
+    delay:?\n\
+];\n", tweenName]];
+        
+        [logString appendString:values];
+        [logString appendString:keys];
+        [logString appendString:tween];
+
+
+        //tween  params
+    }
+
+    printf("%s\n", logString.UTF8String);
 }
 
 -(void)hideAction
 {
-    
+    printf("show/hide action\n");
+    //backup frame
 }
 
 #pragma mark - Observers
@@ -857,22 +1075,23 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         }
         else if ([keyPath isEqualToString:@"state"])
         {
-            printf("state changed\n");
+            //printf("state changed\n");
+            
             if (self.timeline.state == kTimelineStateInitial)
             {
-                printf("initial\n");
+                //printf("initial\n");
             }
             else if (self.timeline.state == kTimelineStateStarted)
             {
-                printf("started\n");
+                //printf("started\n");
             }
             else if (self.timeline.state == kTimelineStatePaused)
             {
-                printf("paused\n");
+                //printf("paused\n");
             }
             else if (self.timeline.state == kTimelineStateOver)
             {
-                printf("over\n");
+                //printf("over\n");
             }
             
             [self updatePlayButtonIcons];
@@ -880,6 +1099,10 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         else if ([keyPath isEqualToString:@"playMode"])
         {
             [self updatePlayModeIcons];
+        }
+        else if ([keyPath isEqualToString:@"reverse"])
+        {
+            [self updateDirectionIcons];
         }
     }
 }
@@ -924,6 +1147,7 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
         [self removeObserver:self.timeline forKeyPath:@"timeCurrent"];
         [self removeObserver:self.timeline forKeyPath:@"state"];
         [self removeObserver:self.timeline forKeyPath:@"playMode"];
+        [self removeObserver:self.timeline forKeyPath:@"reverse"];
     }
 }
 

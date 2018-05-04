@@ -15,7 +15,6 @@
 
 @implementation TweenControl
 
-//TODO: rename to TweenControl
 #pragma mark - Constructor
 -(id)init:(Tween*)tween timeStart:(float)timeStart// timeComplete:(float)timeComplete
 {

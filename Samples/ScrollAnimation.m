@@ -61,7 +61,7 @@
         self.rocket.center = self.center;
         
         self.moon = [self addAsset:@"moon"];
-        self.moon.scale = 4.0f;
+        self.moon.scale = 5.0f;
         self.moon.center = self.center;
 
         self.spaceman = [self addAsset:@"spaceman"];
@@ -212,10 +212,10 @@
         nFrame.origin.y = self.frame.size.height;
         self.jupyter.frame = nFrame;//initial value
         
-        nFrame.origin.y = 0.0f;//destination value
+        nFrame.origin.y = -400.0f;//destination value
         
         [self.timeline addTween:[[Tween alloc] init:self.jupyter
-                                           duration:1.0f
+                                           duration:1.5f
                                                ease:kEaseNone
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value

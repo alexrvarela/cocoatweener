@@ -21,7 +21,7 @@
         
         srandom((int)time(NULL));//seed arc4random first
         
-        self.words = @[@"Hello", @"Hola", @"Bonjour", @"Ciao", @"Olá", @"Hallo", @"こんにちは", @"你好", @"Hej"];
+        self.words = @[@"Hello", @"Hola", @"Bonjour", @"Ciao", @"Olá", @"Hallo", @"Ohayo", @"Konnichiwa", @"Ni hau", @"Hej", @"Guten tag", @"Namaste", @"Salaam", @"Merhaba", @"Szia"];
         self.label = [[UILabel alloc] initWithFrame:CGRectMake(20.0f,
                                                                self.center.y - 60.0f,
                                                                self.frame.size.width - 40.0f,
@@ -42,40 +42,30 @@
                                     nil]
                                       delay:0.0f
                                  completion:^{
-                                     printf("\nhide complete\n");
                                      //change text
-                                     self.currentString = [self randomText];
+                                     NSString* lastString = self.currentString;
+                                     while ([self.currentString isEqualToString:lastString])
+                                     {
+                                         self.currentString = [self randomText];
+                                     }
+                                     
                                      //show text
-                                     self.showText.duration =  0.035f * (float)self.currentString.length;
+                                     self.showText.duration =  0.025f * (float)self.currentString.length;
                                      [CocoaTweener addTween:self.showText];
                                  }
                          ];
         
         self.showText = [[Tween alloc] init:self
-                               duration:0.25f
+                               duration:0.15f
                                    ease:kEaseNone
                                    keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                          [NSNumber numberWithFloat:1.0f], @"interpolation",
                                          nil]
                                   delay:0.0f
                                  completion:^{
-                                     printf("\nshow complete\n");
-                                     [self performSelector:@selector(swapText) withObject:nil afterDelay:1.0f];
+                                     [self performSelector:@selector(swapText) withObject:nil afterDelay:0.5f];
                                  }
                      ];
-        /*
-        UIButton* swapButton = [[UIButton alloc] initWithFrame:CGRectMake(20.0f,
-                                                                          self.frame.size.height -  70.0f,
-                                                                          self.frame.size.width - 40.0f,
-                                                                          50.0f)];
-        [swapButton setTitle:@"SWAP TEXT" forState:UIControlStateNormal];
-        [swapButton addTarget:self action:@selector(swapText) forControlEvents:UIControlEventTouchUpInside];
-        [swapButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        swapButton.layer.cornerRadius = 7.0f;
-        swapButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        swapButton.layer.borderWidth = 2.0f;
-        [self addSubview:swapButton];
-        //*/
         
         [self swapText];
     }
@@ -83,10 +73,10 @@
     return self;
 }
 
-
 -(void)swapText
 {
     [CocoaTweener removeTweens:self];
+    //self.hideText.duration =  0.015f * (float)self.currentString.length;
     [CocoaTweener addTween:self.hideText];
 }
 

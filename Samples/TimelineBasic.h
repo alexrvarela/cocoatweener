@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AssetSample.h"
 #import "CocoaTweener.h"
-#import "TimelineViewer.h"//TODO:rename to TimelineEditor
+#import "TimelineInspector.h"//TODO:rename to TimelineEditor
 
 @interface TimelineBasic : UIView
 

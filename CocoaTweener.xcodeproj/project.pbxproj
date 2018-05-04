@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA1536FC204E0D1600E7A343 /* TimelineViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536EF204E0D1400E7A343 /* TimelineViewer.m */; };
+		FA1536FC204E0D1600E7A343 /* TimelineInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536EF204E0D1400E7A343 /* TimelineInspector.m */; };
 		FA1536FD204E0D1600E7A343 /* Equations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F1204E0D1400E7A343 /* Equations.m */; };
 		FA1536FE204E0D1600E7A343 /* Tween.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F2204E0D1400E7A343 /* Tween.m */; };
 		FA153700204E0D1600E7A343 /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F6204E0D1500E7A343 /* Timeline.m */; };
@@ -52,12 +52,12 @@
 		FA1536EC204E0D1300E7A343 /* Ease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ease.h; sourceTree = "<group>"; };
 		FA1536ED204E0D1400E7A343 /* KVCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCUtils.h; sourceTree = "<group>"; };
 		FA1536EE204E0D1400E7A343 /* Equations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equations.h; sourceTree = "<group>"; };
-		FA1536EF204E0D1400E7A343 /* TimelineViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineViewer.m; sourceTree = "<group>"; };
+		FA1536EF204E0D1400E7A343 /* TimelineInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineInspector.m; sourceTree = "<group>"; };
 		FA1536F0204E0D1400E7A343 /* TweenValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenValues.h; sourceTree = "<group>"; };
 		FA1536F1204E0D1400E7A343 /* Equations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equations.m; sourceTree = "<group>"; };
 		FA1536F2204E0D1400E7A343 /* Tween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tween.m; sourceTree = "<group>"; };
 		FA1536F4204E0D1500E7A343 /* TweenControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenControl.h; sourceTree = "<group>"; };
-		FA1536F5204E0D1500E7A343 /* TimelineViewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineViewer.h; sourceTree = "<group>"; };
+		FA1536F5204E0D1500E7A343 /* TimelineInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineInspector.h; sourceTree = "<group>"; };
 		FA1536F6204E0D1500E7A343 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
 		FA1536F7204E0D1500E7A343 /* TweenValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenValues.m; sourceTree = "<group>"; };
 		FA1536F8204E0D1500E7A343 /* TweenControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenControl.m; sourceTree = "<group>"; };
@@ -228,8 +228,8 @@
 				FA1536F1204E0D1400E7A343 /* Equations.m */,
 				FA1536ED204E0D1400E7A343 /* KVCUtils.h */,
 				FA1536FA204E0D1600E7A343 /* KVCUtils.m */,
-				FA1536F5204E0D1500E7A343 /* TimelineViewer.h */,
-				FA1536EF204E0D1400E7A343 /* TimelineViewer.m */,
+				FA1536F5204E0D1500E7A343 /* TimelineInspector.h */,
+				FA1536EF204E0D1400E7A343 /* TimelineInspector.m */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 				FAD984092076BD2B0011B538 /* ScrollAnimation.m in Sources */,
 				FA153702204E0D1600E7A343 /* TweenControl.m in Sources */,
 				FA1537082057351900E7A343 /* TouchPoint.m in Sources */,
-				FA1536FC204E0D1600E7A343 /* TimelineViewer.m in Sources */,
+				FA1536FC204E0D1600E7A343 /* TimelineInspector.m in Sources */,
 				FA15370E205822F800E7A343 /* AnimateText.m in Sources */,
 				FA153704204E0D1600E7A343 /* CocoaTweener.m in Sources */,
 				FA15371420588BEF00E7A343 /* WindBlow.m in Sources */,

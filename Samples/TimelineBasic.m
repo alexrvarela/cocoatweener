@@ -177,7 +177,7 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
 
     [self.timeline addTween:tween];
     
-    TimelineViewer* inspector = [[TimelineViewer alloc] init];
+    TimelineInspector* inspector = [[TimelineInspector alloc] init];
     inspector.timeline = self.timeline;
     [self addSubview:inspector];
 }

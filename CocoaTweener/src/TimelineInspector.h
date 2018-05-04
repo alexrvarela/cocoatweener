@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Timeline.h"
 
-//TODO:rename to TimelineInspector
-@interface TimelineViewer : UIView
+@interface TimelineInspector : UIView
 
 @property (nonatomic) Timeline* timeline;
 

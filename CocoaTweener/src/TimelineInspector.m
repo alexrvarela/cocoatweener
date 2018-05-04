@@ -74,11 +74,11 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     return path;
 }
 
-#import "TimelineViewer.h"
+#import "TimelineInspector.h"
 #import "Timeline.h"
 #import "TweenControl.h"
 
-@implementation TimelineViewer
+@implementation TimelineInspector
 
 -(UIBezierPath*)makePlayIcon:(CGPoint)origin
 {

@@ -3,114 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA1536FC204E0D1600E7A343 /* TimelineInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536EF204E0D1400E7A343 /* TimelineInspector.m */; };
-		FA1536FD204E0D1600E7A343 /* Equations.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F1204E0D1400E7A343 /* Equations.m */; };
-		FA1536FE204E0D1600E7A343 /* Tween.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F2204E0D1400E7A343 /* Tween.m */; };
-		FA153700204E0D1600E7A343 /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F6204E0D1500E7A343 /* Timeline.m */; };
-		FA153701204E0D1600E7A343 /* TweenValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F7204E0D1500E7A343 /* TweenValues.m */; };
-		FA153702204E0D1600E7A343 /* TweenControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536F8204E0D1500E7A343 /* TweenControl.m */; };
-		FA153703204E0D1600E7A343 /* KVCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536FA204E0D1600E7A343 /* KVCUtils.m */; };
-		FA153704204E0D1600E7A343 /* CocoaTweener.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1536FB204E0D1600E7A343 /* CocoaTweener.m */; };
-		FA1537082057351900E7A343 /* TouchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1537072057351900E7A343 /* TouchPoint.m */; };
-		FA15370B2057402400E7A343 /* TimelineBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15370A2057402400E7A343 /* TimelineBasic.m */; };
-		FA15370E205822F800E7A343 /* AnimateText.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15370D205822F800E7A343 /* AnimateText.m */; };
-		FA1537112058295300E7A343 /* PauseTweens.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1537102058295300E7A343 /* PauseTweens.m */; };
-		FA15371420588BEF00E7A343 /* WindBlow.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15371320588BEF00E7A343 /* WindBlow.m */; };
-		FA15371720597D9300E7A343 /* dart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA15371620597D9300E7A343 /* dart.pdf */; };
-		FA15371B2059831300E7A343 /* PDFImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = FA15371A2059831300E7A343 /* PDFImageRender.m */; };
-		FA21BB7E20473ADD00A403FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21BB7D20473ADD00A403FA /* AppDelegate.m */; };
-		FA21BB8620473ADD00A403FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA21BB8520473ADD00A403FA /* Assets.xcassets */; };
-		FA21BB8C20473ADD00A403FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21BB8B20473ADD00A403FA /* main.m */; };
-		FA21BB9420473B9600A403FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA21BB9320473B9600A403FA /* ViewController.m */; };
-		FA314E6C2087E528009B28D2 /* fire.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E612087E527009B28D2 /* fire.pdf */; };
-		FA314E6D2087E528009B28D2 /* saturn.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E622087E527009B28D2 /* saturn.pdf */; };
-		FA314E6E2087E528009B28D2 /* spaceman.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E632087E527009B28D2 /* spaceman.pdf */; };
-		FA314E6F2087E528009B28D2 /* sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E642087E527009B28D2 /* sun.pdf */; };
-		FA314E702087E528009B28D2 /* stars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E652087E527009B28D2 /* stars.pdf */; };
-		FA314E712087E528009B28D2 /* heart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E662087E527009B28D2 /* heart.pdf */; };
-		FA314E722087E528009B28D2 /* ufo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E672087E527009B28D2 /* ufo.pdf */; };
-		FA314E732087E528009B28D2 /* comet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E682087E528009B28D2 /* comet.pdf */; };
-		FA314E742087E528009B28D2 /* jupyter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E692087E528009B28D2 /* jupyter.pdf */; };
-		FA314E752087E528009B28D2 /* rocket.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E6A2087E528009B28D2 /* rocket.pdf */; };
-		FA314E762087E528009B28D2 /* moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA314E6B2087E528009B28D2 /* moon.pdf */; };
-		FA37450B208E8EE500D3C921 /* sunny.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA37450A208E8EE500D3C921 /* sunny.pdf */; };
-		FA644BA9208BAB73001761F8 /* clouds2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA644BA6208BAB6A001761F8 /* clouds2.pdf */; };
-		FA644BAA208BAB73001761F8 /* clouds1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA644BA7208BAB6C001761F8 /* clouds1.pdf */; };
-		FA644BAB208BAB73001761F8 /* clouds3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FA644BA8208BAB6E001761F8 /* clouds3.pdf */; };
-		FA6CF500205C42A200AFEEF0 /* PDFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA6CF4FF205C42A200AFEEF0 /* PDFImageView.m */; };
-		FA7D7BBF204762A2002212DB /* AssetSample.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7D7BBD204762A0002212DB /* AssetSample.m */; };
-		FAD984092076BD2B0011B538 /* ScrollAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD984082076BD2B0011B538 /* ScrollAnimation.m */; };
+		059B069F210F7D8A00AA0D43 /* Tween.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90AE20DC159F00B6CD08 /* Tween.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06A1210F7D8F00AA0D43 /* Timeline.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90C420DC159F00B6CD08 /* Timeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06A4210F7DD000AA0D43 /* TweenControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90B120DC159F00B6CD08 /* TweenControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06A7210F7DFC00AA0D43 /* Ease.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BA20DC159F00B6CD08 /* Ease.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06AA210F7E3800AA0D43 /* TweenValues.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BE20DC159F00B6CD08 /* TweenValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06AC210F7E3800AA0D43 /* Equations.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90AF20DC159F00B6CD08 /* Equations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06AE210F7E3800AA0D43 /* TimelineInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		059B06B2210F7E3800AA0D43 /* KVCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90C520DC159F00B6CD08 /* KVCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
+		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		FA4C4E1420DC197E005FB15E /* TweenValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B020DC159F00B6CD08 /* TweenValues.m */; };
+		FA4C4E1620DC197E005FB15E /* TimelineInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */; };
+		FA4C4E1920DC197E005FB15E /* KVCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B520DC159F00B6CD08 /* KVCUtils.m */; };
+		FA4C4E1B20DC197E005FB15E /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B720DC159F00B6CD08 /* Timeline.m */; };
+		FA4C4E1D20DC197E005FB15E /* Equations.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B920DC159F00B6CD08 /* Equations.m */; };
+		FA4C4E1F20DC197E005FB15E /* Tween.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90BB20DC159F00B6CD08 /* Tween.m */; };
+		FA4C4E2120DC197E005FB15E /* TweenControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90BD20DC159F00B6CD08 /* TweenControl.m */; };
+		FA4C4E2520DC197E005FB15E /* PDFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90C120DC159F00B6CD08 /* PDFImageView.m */; };
+		FA4C4E2620DC197E005FB15E /* CocoaTweener.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90C220DC159F00B6CD08 /* CocoaTweener.m */; };
+		FA4C4E2720DC197E005FB15E /* PDFImageRender.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90C320DC159F00B6CD08 /* PDFImageRender.m */; };
+		FA57D5D720DC702A00F6FBD2 /* CocoaTweener.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90B820DC159F00B6CD08 /* CocoaTweener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADA4FA220EAC05700948A44 /* PDFImageRender.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90B620DC159F00B6CD08 /* PDFImageRender.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FADA4FA320EAC05700948A44 /* PDFImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90B420DC159F00B6CD08 /* PDFImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA1536E9204E0D1300E7A343 /* CocoaTweener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaTweener.h; sourceTree = "<group>"; };
-		FA1536EA204E0D1300E7A343 /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
-		FA1536EC204E0D1300E7A343 /* Ease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ease.h; sourceTree = "<group>"; };
-		FA1536ED204E0D1400E7A343 /* KVCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCUtils.h; sourceTree = "<group>"; };
-		FA1536EE204E0D1400E7A343 /* Equations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equations.h; sourceTree = "<group>"; };
-		FA1536EF204E0D1400E7A343 /* TimelineInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineInspector.m; sourceTree = "<group>"; };
-		FA1536F0204E0D1400E7A343 /* TweenValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenValues.h; sourceTree = "<group>"; };
-		FA1536F1204E0D1400E7A343 /* Equations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equations.m; sourceTree = "<group>"; };
-		FA1536F2204E0D1400E7A343 /* Tween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tween.m; sourceTree = "<group>"; };
-		FA1536F4204E0D1500E7A343 /* TweenControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenControl.h; sourceTree = "<group>"; };
-		FA1536F5204E0D1500E7A343 /* TimelineInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineInspector.h; sourceTree = "<group>"; };
-		FA1536F6204E0D1500E7A343 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
-		FA1536F7204E0D1500E7A343 /* TweenValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenValues.m; sourceTree = "<group>"; };
-		FA1536F8204E0D1500E7A343 /* TweenControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenControl.m; sourceTree = "<group>"; };
-		FA1536F9204E0D1500E7A343 /* Timeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeline.h; sourceTree = "<group>"; };
-		FA1536FA204E0D1600E7A343 /* KVCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCUtils.m; sourceTree = "<group>"; };
-		FA1536FB204E0D1600E7A343 /* CocoaTweener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaTweener.m; sourceTree = "<group>"; };
-		FA1537062057351900E7A343 /* TouchPoint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchPoint.h; sourceTree = "<group>"; };
-		FA1537072057351900E7A343 /* TouchPoint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchPoint.m; sourceTree = "<group>"; };
-		FA1537092057402400E7A343 /* TimelineBasic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimelineBasic.h; sourceTree = "<group>"; };
-		FA15370A2057402400E7A343 /* TimelineBasic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimelineBasic.m; sourceTree = "<group>"; };
-		FA15370C205822F800E7A343 /* AnimateText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateText.h; sourceTree = "<group>"; };
-		FA15370D205822F800E7A343 /* AnimateText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateText.m; sourceTree = "<group>"; };
-		FA15370F2058295300E7A343 /* PauseTweens.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PauseTweens.h; sourceTree = "<group>"; };
-		FA1537102058295300E7A343 /* PauseTweens.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PauseTweens.m; sourceTree = "<group>"; };
-		FA15371220588BEF00E7A343 /* WindBlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WindBlow.h; sourceTree = "<group>"; };
-		FA15371320588BEF00E7A343 /* WindBlow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WindBlow.m; sourceTree = "<group>"; };
-		FA15371620597D9300E7A343 /* dart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = dart.pdf; sourceTree = "<group>"; };
-		FA1537192059831300E7A343 /* PDFImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageRender.h; sourceTree = "<group>"; };
-		FA15371A2059831300E7A343 /* PDFImageRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageRender.m; sourceTree = "<group>"; };
-		FA15371C20598B7600E7A343 /* Math.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
-		FA21BB7920473ADC00A403FA /* CocoaTweener.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaTweener.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA21BB7C20473ADC00A403FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FA21BB7D20473ADD00A403FA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FA21BB8520473ADD00A403FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FA21BB8A20473ADD00A403FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA21BB8B20473ADD00A403FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA21BB9220473B9600A403FA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA21BB9320473B9600A403FA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FA314E612087E527009B28D2 /* fire.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = fire.pdf; sourceTree = "<group>"; };
-		FA314E622087E527009B28D2 /* saturn.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = saturn.pdf; sourceTree = "<group>"; };
-		FA314E632087E527009B28D2 /* spaceman.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = spaceman.pdf; sourceTree = "<group>"; };
-		FA314E642087E527009B28D2 /* sun.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sun.pdf; sourceTree = "<group>"; };
-		FA314E652087E527009B28D2 /* stars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = stars.pdf; sourceTree = "<group>"; };
-		FA314E662087E527009B28D2 /* heart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = heart.pdf; sourceTree = "<group>"; };
-		FA314E672087E527009B28D2 /* ufo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ufo.pdf; sourceTree = "<group>"; };
-		FA314E682087E528009B28D2 /* comet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = comet.pdf; sourceTree = "<group>"; };
-		FA314E692087E528009B28D2 /* jupyter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = jupyter.pdf; sourceTree = "<group>"; };
-		FA314E6A2087E528009B28D2 /* rocket.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = rocket.pdf; sourceTree = "<group>"; };
-		FA314E6B2087E528009B28D2 /* moon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = moon.pdf; sourceTree = "<group>"; };
-		FA37450A208E8EE500D3C921 /* sunny.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sunny.pdf; sourceTree = "<group>"; };
-		FA644BA6208BAB6A001761F8 /* clouds2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = clouds2.pdf; sourceTree = "<group>"; };
-		FA644BA7208BAB6C001761F8 /* clouds1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = clouds1.pdf; sourceTree = "<group>"; };
-		FA644BA8208BAB6E001761F8 /* clouds3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = clouds3.pdf; sourceTree = "<group>"; };
-		FA6CF4FE205C42A200AFEEF0 /* PDFImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFImageView.h; sourceTree = "<group>"; };
-		FA6CF4FF205C42A200AFEEF0 /* PDFImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFImageView.m; sourceTree = "<group>"; };
-		FA7D7BBD204762A0002212DB /* AssetSample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetSample.m; sourceTree = "<group>"; };
-		FA7D7BBE204762A1002212DB /* AssetSample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetSample.h; sourceTree = "<group>"; };
-		FAD984072076BD2B0011B538 /* ScrollAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollAnimation.h; sourceTree = "<group>"; };
-		FAD984082076BD2B0011B538 /* ScrollAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimation.m; sourceTree = "<group>"; };
+		29B9812B8F0C3A6CDA64081E /* CocoaTweener.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = CocoaTweener.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6003F5AE195388D20070C39A /* CocoaTweener_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTweener_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
+		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		8177F8962CA8CBB124426531 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BF29EFA3D5BDB57E7BD7B8BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		FA4C4E0A20DC193A005FB15E /* CocoaTweener.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaTweener.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4C4E0C20DC193A005FB15E /* CocoaTweener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaTweener.h; sourceTree = "<group>"; };
+		FA4C4E0D20DC193A005FB15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAB90AE20DC159F00B6CD08 /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
+		FAAB90AF20DC159F00B6CD08 /* Equations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equations.h; sourceTree = "<group>"; };
+		FAAB90B020DC159F00B6CD08 /* TweenValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenValues.m; sourceTree = "<group>"; };
+		FAAB90B120DC159F00B6CD08 /* TweenControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenControl.h; sourceTree = "<group>"; };
+		FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineInspector.m; sourceTree = "<group>"; };
+		FAAB90B420DC159F00B6CD08 /* PDFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageView.h; sourceTree = "<group>"; };
+		FAAB90B520DC159F00B6CD08 /* KVCUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCUtils.m; sourceTree = "<group>"; };
+		FAAB90B620DC159F00B6CD08 /* PDFImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageRender.h; sourceTree = "<group>"; };
+		FAAB90B720DC159F00B6CD08 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
+		FAAB90B820DC159F00B6CD08 /* CocoaTweener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaTweener.h; sourceTree = "<group>"; };
+		FAAB90B920DC159F00B6CD08 /* Equations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equations.m; sourceTree = "<group>"; };
+		FAAB90BA20DC159F00B6CD08 /* Ease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ease.h; sourceTree = "<group>"; };
+		FAAB90BB20DC159F00B6CD08 /* Tween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tween.m; sourceTree = "<group>"; };
+		FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineInspector.h; sourceTree = "<group>"; };
+		FAAB90BD20DC159F00B6CD08 /* TweenControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenControl.m; sourceTree = "<group>"; };
+		FAAB90BE20DC159F00B6CD08 /* TweenValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenValues.h; sourceTree = "<group>"; };
+		FAAB90C120DC159F00B6CD08 /* PDFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageView.m; sourceTree = "<group>"; };
+		FAAB90C220DC159F00B6CD08 /* CocoaTweener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CocoaTweener.m; sourceTree = "<group>"; };
+		FAAB90C320DC159F00B6CD08 /* PDFImageRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFImageRender.m; sourceTree = "<group>"; };
+		FAAB90C420DC159F00B6CD08 /* Timeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timeline.h; sourceTree = "<group>"; };
+		FAAB90C520DC159F00B6CD08 /* KVCUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA21BB7620473ADC00A403FA /* Frameworks */ = {
+		6003F5AB195388D20070C39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4C4E0620DC193A005FB15E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -120,130 +85,142 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA1537052057350100E7A343 /* Samples */ = {
+		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				FA1537062057351900E7A343 /* TouchPoint.h */,
-				FA1537072057351900E7A343 /* TouchPoint.m */,
-				FA1537092057402400E7A343 /* TimelineBasic.h */,
-				FA15370A2057402400E7A343 /* TimelineBasic.m */,
-				FA15370C205822F800E7A343 /* AnimateText.h */,
-				FA15370D205822F800E7A343 /* AnimateText.m */,
-				FA15370F2058295300E7A343 /* PauseTweens.h */,
-				FA1537102058295300E7A343 /* PauseTweens.m */,
-				FA15371220588BEF00E7A343 /* WindBlow.h */,
-				FA15371320588BEF00E7A343 /* WindBlow.m */,
-				FAD984072076BD2B0011B538 /* ScrollAnimation.h */,
-				FAD984082076BD2B0011B538 /* ScrollAnimation.m */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
-		FA15371520597D9300E7A343 /* resources */ = {
-			isa = PBXGroup;
-			children = (
-				FA37450A208E8EE500D3C921 /* sunny.pdf */,
-				FA644BA7208BAB6C001761F8 /* clouds1.pdf */,
-				FA644BA6208BAB6A001761F8 /* clouds2.pdf */,
-				FA644BA8208BAB6E001761F8 /* clouds3.pdf */,
-				FA314E682087E528009B28D2 /* comet.pdf */,
-				FA314E612087E527009B28D2 /* fire.pdf */,
-				FA314E662087E527009B28D2 /* heart.pdf */,
-				FA314E692087E528009B28D2 /* jupyter.pdf */,
-				FA314E6B2087E528009B28D2 /* moon.pdf */,
-				FA314E6A2087E528009B28D2 /* rocket.pdf */,
-				FA314E622087E527009B28D2 /* saturn.pdf */,
-				FA314E632087E527009B28D2 /* spaceman.pdf */,
-				FA314E652087E527009B28D2 /* stars.pdf */,
-				FA314E642087E527009B28D2 /* sun.pdf */,
-				FA314E672087E527009B28D2 /* ufo.pdf */,
-				FA15371620597D9300E7A343 /* dart.pdf */,
-			);
-			path = resources;
-			sourceTree = "<group>";
-		};
-		FA1537182059831300E7A343 /* utils */ = {
-			isa = PBXGroup;
-			children = (
-				FA15371C20598B7600E7A343 /* Math.h */,
-				FA1537192059831300E7A343 /* PDFImageRender.h */,
-				FA15371A2059831300E7A343 /* PDFImageRender.m */,
-				FA6CF4FE205C42A200AFEEF0 /* PDFImageView.h */,
-				FA6CF4FF205C42A200AFEEF0 /* PDFImageView.m */,
-			);
-			path = utils;
-			sourceTree = "<group>";
-		};
-		FA21BB7020473ADC00A403FA = {
-			isa = PBXGroup;
-			children = (
-				FA21BB7B20473ADC00A403FA /* CocoaTweener */,
-				FA1537052057350100E7A343 /* Samples */,
-				FA1537182059831300E7A343 /* utils */,
-				FA15371520597D9300E7A343 /* resources */,
-				FA21BB7A20473ADC00A403FA /* Products */,
+				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				FAAB90AD20DC159F00B6CD08 /* Source */,
+				6003F5B5195388D20070C39A /* Tests */,
+				FA4C4E0B20DC193A005FB15E /* CocoaTweener */,
+				6003F58B195388D20070C39A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA21BB7A20473ADC00A403FA /* Products */ = {
+		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA21BB7920473ADC00A403FA /* CocoaTweener.app */,
+				6003F5AE195388D20070C39A /* CocoaTweener_Tests.xctest */,
+				FA4C4E0A20DC193A005FB15E /* CocoaTweener.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA21BB7B20473ADC00A403FA /* CocoaTweener */ = {
+		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FA7D7BAD204742EF002212DB /* src */,
-				FA21BB7C20473ADC00A403FA /* AppDelegate.h */,
-				FA21BB7D20473ADD00A403FA /* AppDelegate.m */,
-				FA21BB9220473B9600A403FA /* ViewController.h */,
-				FA21BB9320473B9600A403FA /* ViewController.m */,
-				FA7D7BBE204762A1002212DB /* AssetSample.h */,
-				FA7D7BBD204762A0002212DB /* AssetSample.m */,
-				FA21BB8520473ADD00A403FA /* Assets.xcassets */,
-				FA21BB8A20473ADD00A403FA /* Info.plist */,
-				FA21BB8B20473ADD00A403FA /* main.m */,
+				6003F5BB195388D20070C39A /* Tests.m */,
+				6003F5B6195388D20070C39A /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		6003F5B6195388D20070C39A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6003F5B7195388D20070C39A /* Tests-Info.plist */,
+				6003F5B8195388D20070C39A /* InfoPlist.strings */,
+				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				29B9812B8F0C3A6CDA64081E /* CocoaTweener.podspec */,
+				8177F8962CA8CBB124426531 /* README.md */,
+				BF29EFA3D5BDB57E7BD7B8BC /* LICENSE */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		FA4C4E0B20DC193A005FB15E /* CocoaTweener */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C4E0C20DC193A005FB15E /* CocoaTweener.h */,
+				FA4C4E0D20DC193A005FB15E /* Info.plist */,
 			);
 			path = CocoaTweener;
 			sourceTree = "<group>";
 		};
-		FA7D7BAD204742EF002212DB /* src */ = {
+		FAAB90AD20DC159F00B6CD08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				FA1536E9204E0D1300E7A343 /* CocoaTweener.h */,
-				FA1536FB204E0D1600E7A343 /* CocoaTweener.m */,
-				FA1536EA204E0D1300E7A343 /* Tween.h */,
-				FA1536F2204E0D1400E7A343 /* Tween.m */,
-				FA1536F9204E0D1500E7A343 /* Timeline.h */,
-				FA1536F6204E0D1500E7A343 /* Timeline.m */,
-				FA1536F4204E0D1500E7A343 /* TweenControl.h */,
-				FA1536F8204E0D1500E7A343 /* TweenControl.m */,
-				FA1536F0204E0D1400E7A343 /* TweenValues.h */,
-				FA1536F7204E0D1500E7A343 /* TweenValues.m */,
-				FA1536EC204E0D1300E7A343 /* Ease.h */,
-				FA1536EE204E0D1400E7A343 /* Equations.h */,
-				FA1536F1204E0D1400E7A343 /* Equations.m */,
-				FA1536ED204E0D1400E7A343 /* KVCUtils.h */,
-				FA1536FA204E0D1600E7A343 /* KVCUtils.m */,
-				FA1536F5204E0D1500E7A343 /* TimelineInspector.h */,
-				FA1536EF204E0D1400E7A343 /* TimelineInspector.m */,
+				FAAB90B820DC159F00B6CD08 /* CocoaTweener.h */,
+				FAAB90C220DC159F00B6CD08 /* CocoaTweener.m */,
+				FAAB90AE20DC159F00B6CD08 /* Tween.h */,
+				FAAB90BB20DC159F00B6CD08 /* Tween.m */,
+				FAAB90C420DC159F00B6CD08 /* Timeline.h */,
+				FAAB90B720DC159F00B6CD08 /* Timeline.m */,
+				FAAB90B120DC159F00B6CD08 /* TweenControl.h */,
+				FAAB90BD20DC159F00B6CD08 /* TweenControl.m */,
+				FAAB90BE20DC159F00B6CD08 /* TweenValues.h */,
+				FAAB90B020DC159F00B6CD08 /* TweenValues.m */,
+				FAAB90AF20DC159F00B6CD08 /* Equations.h */,
+				FAAB90B920DC159F00B6CD08 /* Equations.m */,
+				FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */,
+				FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */,
+				FAAB90B620DC159F00B6CD08 /* PDFImageRender.h */,
+				FAAB90C320DC159F00B6CD08 /* PDFImageRender.m */,
+				FAAB90B420DC159F00B6CD08 /* PDFImageView.h */,
+				FAAB90C120DC159F00B6CD08 /* PDFImageView.m */,
+				FAAB90C520DC159F00B6CD08 /* KVCUtils.h */,
+				FAAB90B520DC159F00B6CD08 /* KVCUtils.m */,
+				FAAB90BA20DC159F00B6CD08 /* Ease.h */,
 			);
-			path = src;
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FA4C4E0720DC193A005FB15E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA57D5D720DC702A00F6FBD2 /* CocoaTweener.h in Headers */,
+				FADA4FA220EAC05700948A44 /* PDFImageRender.h in Headers */,
+				FADA4FA320EAC05700948A44 /* PDFImageView.h in Headers */,
+				059B06A1210F7D8F00AA0D43 /* Timeline.h in Headers */,
+				059B069F210F7D8A00AA0D43 /* Tween.h in Headers */,
+				059B06A7210F7DFC00AA0D43 /* Ease.h in Headers */,
+				059B06AC210F7E3800AA0D43 /* Equations.h in Headers */,
+				059B06AE210F7E3800AA0D43 /* TimelineInspector.h in Headers */,
+				059B06A4210F7DD000AA0D43 /* TweenControl.h in Headers */,
+				059B06AA210F7E3800AA0D43 /* TweenValues.h in Headers */,
+				059B06B2210F7E3800AA0D43 /* KVCUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		FA21BB7820473ADC00A403FA /* CocoaTweener */ = {
+		6003F5AD195388D20070C39A /* CocoaTweener_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA21BB8F20473ADD00A403FA /* Build configuration list for PBXNativeTarget "CocoaTweener" */;
+			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CocoaTweener_Tests" */;
 			buildPhases = (
-				FA21BB7520473ADC00A403FA /* Sources */,
-				FA21BB7620473ADC00A403FA /* Frameworks */,
-				FA21BB7720473ADC00A403FA /* Resources */,
+				728064E8B1C5CF74AA04F55B /* [CP] Check Pods Manifest.lock */,
+				6003F5AA195388D20070C39A /* Sources */,
+				6003F5AB195388D20070C39A /* Frameworks */,
+				6003F5AC195388D20070C39A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaTweener_Tests;
+			productName = CocoaTweenerTests;
+			productReference = 6003F5AE195388D20070C39A /* CocoaTweener_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA4C4E0920DC193A005FB15E /* CocoaTweener */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4C4E1120DC193A005FB15E /* Build configuration list for PBXNativeTarget "CocoaTweener" */;
+			buildPhases = (
+				FA4C4E0520DC193A005FB15E /* Sources */,
+				FA4C4E0620DC193A005FB15E /* Frameworks */,
+				FA4C4E0720DC193A005FB15E /* Headers */,
+				FA4C4E0820DC193A005FB15E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -251,107 +228,131 @@
 			);
 			name = CocoaTweener;
 			productName = CocoaTweener;
-			productReference = FA21BB7920473ADC00A403FA /* CocoaTweener.app */;
-			productType = "com.apple.product-type.application";
+			productReference = FA4C4E0A20DC193A005FB15E /* CocoaTweener.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA21BB7120473ADC00A403FA /* Project object */ = {
+		6003F582195388D10070C39A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = "Alejandro Ramirez Varela";
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = alexrvarela;
 				TargetAttributes = {
-					FA21BB7820473ADC00A403FA = {
-						CreatedOnToolsVersion = 9.2;
+					6003F5AD195388D20070C39A = {
+						TestTargetID = 6003F589195388D20070C39A;
+					};
+					FA4C4E0920DC193A005FB15E = {
+						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = FA21BB7420473ADC00A403FA /* Build configuration list for PBXProject "CocoaTweener" */;
-			compatibilityVersion = "Xcode 8.0";
-			developmentRegion = en;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "CocoaTweener" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = FA21BB7020473ADC00A403FA;
-			productRefGroup = FA21BB7A20473ADC00A403FA /* Products */;
+			mainGroup = 6003F581195388D10070C39A;
+			productRefGroup = 6003F58B195388D20070C39A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA21BB7820473ADC00A403FA /* CocoaTweener */,
+				FA4C4E0920DC193A005FB15E /* CocoaTweener */,
+				6003F5AD195388D20070C39A /* CocoaTweener_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FA21BB7720473ADC00A403FA /* Resources */ = {
+		6003F5AC195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA644BAB208BAB73001761F8 /* clouds3.pdf in Resources */,
-				FA314E6E2087E528009B28D2 /* spaceman.pdf in Resources */,
-				FA37450B208E8EE500D3C921 /* sunny.pdf in Resources */,
-				FA314E712087E528009B28D2 /* heart.pdf in Resources */,
-				FA644BAA208BAB73001761F8 /* clouds1.pdf in Resources */,
-				FA314E6F2087E528009B28D2 /* sun.pdf in Resources */,
-				FA21BB8620473ADD00A403FA /* Assets.xcassets in Resources */,
-				FA314E6C2087E528009B28D2 /* fire.pdf in Resources */,
-				FA314E742087E528009B28D2 /* jupyter.pdf in Resources */,
-				FA15371720597D9300E7A343 /* dart.pdf in Resources */,
-				FA314E702087E528009B28D2 /* stars.pdf in Resources */,
-				FA314E6D2087E528009B28D2 /* saturn.pdf in Resources */,
-				FA644BA9208BAB73001761F8 /* clouds2.pdf in Resources */,
-				FA314E732087E528009B28D2 /* comet.pdf in Resources */,
-				FA314E722087E528009B28D2 /* ufo.pdf in Resources */,
-				FA314E752087E528009B28D2 /* rocket.pdf in Resources */,
-				FA314E762087E528009B28D2 /* moon.pdf in Resources */,
+				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4C4E0820DC193A005FB15E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		728064E8B1C5CF74AA04F55B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaTweener_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		FA21BB7520473ADC00A403FA /* Sources */ = {
+		6003F5AA195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA21BB9420473B9600A403FA /* ViewController.m in Sources */,
-				FA1536FE204E0D1600E7A343 /* Tween.m in Sources */,
-				FA1537112058295300E7A343 /* PauseTweens.m in Sources */,
-				FA153703204E0D1600E7A343 /* KVCUtils.m in Sources */,
-				FA1536FD204E0D1600E7A343 /* Equations.m in Sources */,
-				FA153700204E0D1600E7A343 /* Timeline.m in Sources */,
-				FA21BB8C20473ADD00A403FA /* main.m in Sources */,
-				FA7D7BBF204762A2002212DB /* AssetSample.m in Sources */,
-				FA6CF500205C42A200AFEEF0 /* PDFImageView.m in Sources */,
-				FA15371B2059831300E7A343 /* PDFImageRender.m in Sources */,
-				FA153701204E0D1600E7A343 /* TweenValues.m in Sources */,
-				FAD984092076BD2B0011B538 /* ScrollAnimation.m in Sources */,
-				FA153702204E0D1600E7A343 /* TweenControl.m in Sources */,
-				FA1537082057351900E7A343 /* TouchPoint.m in Sources */,
-				FA1536FC204E0D1600E7A343 /* TimelineInspector.m in Sources */,
-				FA15370E205822F800E7A343 /* AnimateText.m in Sources */,
-				FA153704204E0D1600E7A343 /* CocoaTweener.m in Sources */,
-				FA15371420588BEF00E7A343 /* WindBlow.m in Sources */,
-				FA15370B2057402400E7A343 /* TimelineBasic.m in Sources */,
-				FA21BB7E20473ADD00A403FA /* AppDelegate.m in Sources */,
+				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA4C4E0520DC193A005FB15E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4C4E2620DC197E005FB15E /* CocoaTweener.m in Sources */,
+				FA4C4E1F20DC197E005FB15E /* Tween.m in Sources */,
+				FA4C4E1B20DC197E005FB15E /* Timeline.m in Sources */,
+				FA4C4E2120DC197E005FB15E /* TweenControl.m in Sources */,
+				FA4C4E1420DC197E005FB15E /* TweenValues.m in Sources */,
+				FA4C4E1620DC197E005FB15E /* TimelineInspector.m in Sources */,
+				FA4C4E1920DC197E005FB15E /* KVCUtils.m in Sources */,
+				FA4C4E1D20DC197E005FB15E /* Equations.m in Sources */,
+				FA4C4E2520DC197E005FB15E /* PDFImageView.m in Sources */,
+				FA4C4E2720DC197E005FB15E /* PDFImageRender.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6003F5B9195388D20070C39A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		FA21BB8D20473ADD00A403FA /* Debug */ = {
+		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -359,27 +360,26 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -387,6 +387,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -394,19 +395,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FA21BB8E20473ADD00A403FA /* Release */ = {
+		6003F5BE195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
@@ -414,27 +413,26 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -443,64 +441,154 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FA21BB9020473ADD00A403FA /* Debug */ = {
+		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WB3M6M662;
-				INFOPLIST_FILE = CocoaTweener/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaTweener_Example.app/CocoaTweener_Example";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
-		FA21BB9120473ADD00A403FA /* Release */ = {
+		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9WB3M6M662;
-				INFOPLIST_FILE = CocoaTweener/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.-";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaTweener_Example.app/CocoaTweener_Example";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		FA4C4E0F20DC193A005FB15E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoaTweener/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.CocoaTweener";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FA4C4E1020DC193A005FB15E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CocoaTweener/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.-.CocoaTweener";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA21BB7420473ADC00A403FA /* Build configuration list for PBXProject "CocoaTweener" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "CocoaTweener" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA21BB8D20473ADD00A403FA /* Debug */,
-				FA21BB8E20473ADD00A403FA /* Release */,
+				6003F5BD195388D20070C39A /* Debug */,
+				6003F5BE195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA21BB8F20473ADD00A403FA /* Build configuration list for PBXNativeTarget "CocoaTweener" */ = {
+		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "CocoaTweener_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA21BB9020473ADD00A403FA /* Debug */,
-				FA21BB9120473ADD00A403FA /* Release */,
+				6003F5C3195388D20070C39A /* Debug */,
+				6003F5C4195388D20070C39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4C4E1120DC193A005FB15E /* Build configuration list for PBXNativeTarget "CocoaTweener" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4C4E0F20DC193A005FB15E /* Debug */,
+				FA4C4E1020DC193A005FB15E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA21BB7120473ADC00A403FA /* Project object */;
+	rootObject = 6003F582195388D10070C39A /* Project object */;
 }

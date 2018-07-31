@@ -10,23 +10,51 @@ Easy to use animation engine for iOs, make more powerfull and creative Apps.
 
 * Xcode with IOs 9.0+
 
-### Installing
 
-Install manually
+### Install using Cocoapods
 
-Download and copy the entire folder named "src"  to your Xcode project.
-
-Install using Cocoapods
-
+To integrate using Cocoa Pods install Cocoa Pods with this gem:
 ```
-In process...
+$ gem install cocoapods
 ```
 
-Install using Carthage
+Now, add CocoaTweener to your Podfile
+```
+pod 'CocoaTweener', '~> 1.0.1'
+```
 
+To install dependencies run this command
 ```
-In process...
+pod install
 ```
+
+Now, add CocoaTweener to your Podfile
+```
+pod 'CocoaTweener', '~> 1.0.1'
+```
+
+### Install using Carthage
+
+To integrate install Carthage using brew
+```
+$ brew update
+$ brew install carthage
+```
+
+Now, add CocoaTweener to your Cartfile
+```
+github "alexrvarela/CocoaTweener" ~> 1.0.1
+```
+
+To install dependencies run tis command
+```
+$ carthage update
+```
+Finally drag & drop CocoaTweenr.framework to your Xcode Project
+
+### Install manually
+
+Download and copy the entire folder named "Source"  to your Xcode project.
 
 ### Usage
 

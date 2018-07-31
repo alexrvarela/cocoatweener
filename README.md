@@ -10,10 +10,11 @@ Easy to use animation engine for iOs, make more powerfull and creative Apps.
 
 * Xcode with IOs 9.0+
 
+## Installation
 
 ### Install using Cocoapods
 
-To integrate using Cocoa Pods install Cocoa Pods with this gem:
+To integrate install ![Cocoa Pods](http://cocoapods.org/) using this gem:
 ```
 $ gem install cocoapods
 ```
@@ -28,14 +29,10 @@ To install dependencies run this command
 pod install
 ```
 
-Now, add CocoaTweener to your Podfile
-```
-pod 'CocoaTweener', '~> 1.0.1'
-```
 
 ### Install using Carthage
 
-To integrate install Carthage using brew
+To integrate install ![Carthage](https://github.com/Carthage/Carthage) using brew:
 ```
 $ brew update
 $ brew install carthage

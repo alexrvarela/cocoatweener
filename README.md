@@ -14,7 +14,7 @@ Easy to use animation engine for iOs, make more powerfull and creative Apps.
 
 ### Install using Cocoapods
 
-To integrate install ![Cocoa Pods](http://cocoapods.org/) using this gem:
+To integrate install [Cocoa Pods](http://cocoapods.org/) using this gem:
 ```
 $ gem install cocoapods
 ```
@@ -32,7 +32,7 @@ pod install
 
 ### Install using Carthage
 
-To integrate install ![Carthage](https://github.com/Carthage/Carthage) using brew:
+To integrate install [Carthage](https://github.com/Carthage/Carthage) using brew:
 ```
 $ brew update
 $ brew install carthage

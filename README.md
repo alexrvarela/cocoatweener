@@ -43,7 +43,7 @@ Now, add CocoaTweener to your Cartfile
 github "alexrvarela/CocoaTweener" ~> 1.0.1
 ```
 
-To install dependencies run tis command
+To install dependencies run this command
 ```
 $ carthage update
 ```

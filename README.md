@@ -58,7 +58,7 @@ Download and copy the entire folder named "Source"  to your Xcode project.
 Import CocoaTweener engine to your project:
 
 ```objc
-#import "CocoaTweener.h"
+#import <CocoaTweener/CocoaTweener.h>
 ```
 
 Create and add simple Tween:

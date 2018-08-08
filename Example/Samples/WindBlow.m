@@ -6,9 +6,25 @@
 //  Copyright © 2018 Alejandro Ramirez Varela. All rights reserved.
 //
 
+
+//static inline float GetRandomFloatRange(float Maxvalue, float MinValue)
+//{
+//    return ((float)arc4random() % (Maxvalue - MinValue)) + MinValue;
+//}
+
 #import "WindBlow.h"
-#import <CocoaTweener/CocoaTweener.h>//TODO: add to CocoaTweener.h
-//#import ""
+#import <CocoaTweener/CocoaTweener.h>
+#define ARC4RANDOM_MAX      0x100000000
+
+static inline float GetRandomFloat(float number)
+{
+    return ((float)arc4random() / ARC4RANDOM_MAX) * number;
+}
+
+static inline float GetRandomFloatRange(float Maxvalue, float MinValue)
+{
+    return GetRandomFloat((Maxvalue - MinValue)) + MinValue;
+}
 
 @implementation WindBlow
 
@@ -69,17 +85,17 @@
 
 -(void)animate
 {
-//    float random = GetRandomFloatRange(5.0f, 1.0f);
-//    
-//    [CocoaTweener addTween:[[Tween alloc] init:self
-//                                      duration:random * 2.0f
-//                                          ease:kEaseInOutQuad
-//                                          keys:[NSDictionary dictionaryWithObjectsAndKeys:
-//                                                [NSNumber numberWithFloat:random], @"blow",//TODO: set random
-//                                                nil]
-//                                         delay:0.0f
-//                                    completion:^{[self animate];}
-//                            ]];
+    float random = GetRandomFloatRange(5.0f, 1.0f);
+    
+    [CocoaTweener addTween:[[Tween alloc] init:self
+                                      duration:random * 2.0f
+                                          ease:kEaseInOutQuad
+                                          keys:[NSDictionary dictionaryWithObjectsAndKeys:
+                                                [NSNumber numberWithFloat:random], @"blow",//TODO: set random
+                                                nil]
+                                         delay:0.0f
+                                    completion:^{[self animate];}
+                            ]];
 }
 
 @end

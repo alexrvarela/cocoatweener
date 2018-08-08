@@ -51,10 +51,14 @@
     return mediaRect.size;
 }
 
-//TODO:add screen scale
+//TODO:add retina scale support
 -(UIImage *)renderPage:(NSUInteger)page scale:(CGFloat)scale
 {
     if(_document == NULL)return nil;
+    
+    //Add retina scale support
+    CGFloat retinaScale = UIScreen.mainScreen.scale;
+    scale *= retinaScale;
     
     //Get page
     CGPDFPageRef PDFPageRef = CGPDFDocumentGetPage(_document, page);
@@ -77,10 +81,12 @@
 
     //Draw it and generate UIImage
     CGContextDrawPDFPage(context, PDFPageRef);
+    //Get UIImage
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    return image;
+    //Return new image with retina scale
+    return [UIImage imageWithCGImage:image.CGImage scale:retinaScale orientation:image.imageOrientation];
 }
 
 -(void)dealloc

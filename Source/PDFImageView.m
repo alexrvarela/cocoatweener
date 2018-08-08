@@ -55,6 +55,7 @@
     if(self.pdf.document != NULL)
     {
         self.image = [self.pdf renderPage:self.currentPage scale:self.scale];
+        
         self.frame = CGRectMake(self.frame.origin.x,
                                 self.frame.origin.y,
                                 self.image.size.width,

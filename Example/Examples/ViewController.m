@@ -9,19 +9,22 @@
 
 #import "ViewController.h"
 
-//engine
+//Engine
 #import <CocoaTweener/CocoaTweener.h>
-//#import "CocoaTweener.h"
-//#import "Tween.h"
-//samples
 
+//Samples
 #import "TouchPoint.h"
 #import "AnimateText.h"
 #import "PauseTweens.h"
 #import "TimelineBasic.h"
 #import "WindBlow.h"
-#import "ScrollAnimation.h"
-
+#import "ScrollTimeline.h"
+#import "PathLoop.h"
+#import "ScrollAims.h"
+#import "AnimateArcRadius.h"
+#import "ArcOrbits.h"
+#import "SimpleTween.h"
+#import "TweenHandlers.h"
 
 @interface ViewController ()
 
@@ -41,38 +44,46 @@
         self.container = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         [self.view addSubview:self.container];
         
-        float spacing = 20.0f;
-        float buttonWidth = (UIScreen.mainScreen.bounds.size.width - spacing * 3.0f) / 2.0f;
+//        float spacing = 20.0f;
+        float buttonWidth = (UIScreen.mainScreen.bounds.size.width) / 2.0f - 1.0;
         
-        UIButton* prevButton = [[UIButton alloc] initWithFrame:CGRectMake(spacing,
-                                                                          40.0f,
+        UIButton* prevButton = [[UIButton alloc] initWithFrame:CGRectMake(0.0f,
+                                                                          UIScreen.mainScreen.bounds.size.height - 40.0f,
                                                                           buttonWidth,
                                                                           40.0f)];
         [prevButton setTitle:@"PREV" forState:UIControlStateNormal];
         [prevButton addTarget:self action:@selector(prev) forControlEvents:UIControlEventTouchUpInside];
-        prevButton.layer.cornerRadius = 7.0f;
-        prevButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        prevButton.layer.borderWidth = 2.0f;
+        prevButton.backgroundColor = UIColor.blackColor;
         [self.view addSubview:prevButton];
         
-        UIButton* nextButton = [[UIButton alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width - buttonWidth -spacing,
-                                                                          40.0f,
+        UIButton* nextButton = [[UIButton alloc] initWithFrame:CGRectMake(UIScreen.mainScreen.bounds.size.width - buttonWidth,
+                                                                          UIScreen.mainScreen.bounds.size.height - 40.0f,
                                                                           buttonWidth,
                                                                           40.0f)];
         [nextButton setTitle:@"NEXT" forState:UIControlStateNormal];
         [nextButton addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
-        nextButton.layer.cornerRadius = 7.0f;
-        nextButton.layer.borderColor = [UIColor whiteColor].CGColor;
-        nextButton.layer.borderWidth = 2.0f;
+        nextButton.backgroundColor = UIColor.blackColor;
         [self.view addSubview:nextButton];
-        
 
-        [self.container addSubview:[[TouchPoint alloc] init]];
-        [self.container addSubview:[[AnimateText alloc] init]];
-        [self.container addSubview:[[PauseTweens alloc] init]];
-        [self.container addSubview:[[WindBlow alloc] init]];
-        [self.container addSubview:[[ScrollAnimation alloc] init]];
-        [self.container addSubview:[[TimelineBasic alloc] init]];
+        
+//        CGRect contentFrame = UIScreen.mainScreen.bounds;
+        CGRect contentFrame = CGRectMake(0.0f,
+                                        0.0f,
+                                        UIScreen.mainScreen.bounds.size.width,
+                                        UIScreen.mainScreen.bounds.size.height - 40.0f);
+        
+//        [self.container addSubview:[[SimpleTween alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[TweenHandlers alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[ArcOrbits alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[AnimateArcRadius alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[ScrollAims alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[PathLoop alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[TouchPoint alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[AnimateText alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[PauseTweens alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[WindBlow alloc] initWithFrame:contentFrame]];
+//        [self.container addSubview:[[ScrollTimeline alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[TimelineBasic alloc] initWithFrame:contentFrame]];
 
         float x = 0.0f;
         
@@ -140,5 +151,9 @@
     //PAUSE ALL TWEENS
 }
 
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 
 @end

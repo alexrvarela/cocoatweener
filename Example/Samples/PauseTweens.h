@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-//#import ""
-
 @interface PauseTweens : UIView
 
 @property (strong) UIView *clouds1;

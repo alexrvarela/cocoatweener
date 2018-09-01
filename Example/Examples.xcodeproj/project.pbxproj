@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		050C312C2136E15C0046DDBF /* earth.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 050C312A2136E15B0046DDBF /* earth.pdf */; };
+		050C312D2136E15C0046DDBF /* little-earth.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 050C312B2136E15B0046DDBF /* little-earth.pdf */; };
+		053F9AC72139B16E002335A0 /* TweenHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 053F9AC62139B16E002335A0 /* TweenHandlers.m */; };
+		055611A02126F82F00515AA9 /* PathLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0556119F2126F82F00515AA9 /* PathLoop.m */; };
+		055611BA2126FE0600515AA9 /* bee.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611B72126FE0600515AA9 /* bee.pdf */; };
+		055611BB2126FE0600515AA9 /* flower.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611B92126FE0600515AA9 /* flower.pdf */; };
+		055611BE212DC7DB00515AA9 /* ArcOrbits.m in Sources */ = {isa = PBXBuildFile; fileRef = 055611BD212DC7DB00515AA9 /* ArcOrbits.m */; };
+		055611C2212DCF0000515AA9 /* bb8-body.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611C1212DCF0000515AA9 /* bb8-body.pdf */; };
+		055611C5212DD12C00515AA9 /* ScrollAims.m in Sources */ = {isa = PBXBuildFile; fileRef = 055611C4212DD12C00515AA9 /* ScrollAims.m */; };
+		055611C8212DD14300515AA9 /* AnimateArcRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 055611C7212DD14300515AA9 /* AnimateArcRadius.m */; };
+		055611CB212DD23500515AA9 /* eyepupil.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611C9212DD23400515AA9 /* eyepupil.pdf */; };
+		055611CC212DD23500515AA9 /* sand.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611CA212DD23500515AA9 /* sand.pdf */; };
+		055611CE212EFAD500515AA9 /* bb8-head.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 055611CD212EFAD500515AA9 /* bb8-head.pdf */; };
 		059B0699210F7BC900AA0D43 /* CocoaTweener.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 059B0690210F6FE300AA0D43 /* CocoaTweener.framework */; };
 		059B069A210F7BC900AA0D43 /* CocoaTweener.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 059B0690210F6FE300AA0D43 /* CocoaTweener.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		059B06C1210F821600AA0D43 /* WindBlow.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06B6210F821500AA0D43 /* WindBlow.m */; };
-		059B06C2210F821600AA0D43 /* ScrollAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06B9210F821500AA0D43 /* ScrollAnimation.m */; };
+		059B06C2210F821600AA0D43 /* ScrollTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06B9210F821500AA0D43 /* ScrollTimeline.m */; };
 		059B06C3210F821600AA0D43 /* TimelineBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06BA210F821500AA0D43 /* TimelineBasic.m */; };
 		059B06C4210F821600AA0D43 /* AnimateText.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06BB210F821500AA0D43 /* AnimateText.m */; };
 		059B06C5210F821600AA0D43 /* TouchPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 059B06BE210F821600AA0D43 /* TouchPoint.m */; };
+		05A2A0A02136402500B23E42 /* little-sun.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A2A09B2136402500B23E42 /* little-sun.pdf */; };
+		05A2A0A12136402500B23E42 /* little-jupyter.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A2A09D2136402500B23E42 /* little-jupyter.pdf */; };
+		05A2A0A22136402500B23E42 /* little-saturn.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A2A09E2136402500B23E42 /* little-saturn.pdf */; };
+		05A5E0E72137893100D7A08E /* orbits-background.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0E42137893000D7A08E /* orbits-background.pdf */; };
+		05A5E0E82137893100D7A08E /* little-sun-fire.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0E62137893000D7A08E /* little-sun-fire.pdf */; };
+		05A5E0EB2138431100D7A08E /* SimpleTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5E0EA2138431100D7A08E /* SimpleTween.m */; };
+		05A5E0EF2138554000D7A08E /* mars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0EE2138554000D7A08E /* mars.pdf */; };
 		FAA2886520DD409B00F23485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA2886420DD409B00F23485 /* AppDelegate.m */; };
 		FAA2886820DD409B00F23485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA2886720DD409B00F23485 /* ViewController.m */; };
 		FAA2886D20DD409D00F23485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA2886C20DD409D00F23485 /* Assets.xcassets */; };
@@ -25,7 +45,6 @@
 		FACB8E7520DD415A006FD80B /* sunny.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5520DD415A006FD80B /* sunny.pdf */; };
 		FACB8E7620DD415A006FD80B /* comet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5620DD415A006FD80B /* comet.pdf */; };
 		FACB8E7720DD415A006FD80B /* clouds2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5720DD415A006FD80B /* clouds2.pdf */; };
-		FACB8E7820DD415A006FD80B /* heart.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5820DD415A006FD80B /* heart.pdf */; };
 		FACB8E7920DD415A006FD80B /* moon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5920DD415A006FD80B /* moon.pdf */; };
 		FACB8E7A20DD415A006FD80B /* clouds3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5A20DD415A006FD80B /* clouds3.pdf */; };
 		FACB8E7B20DD415A006FD80B /* ufo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FACB8E5B20DD415A006FD80B /* ufo.pdf */; };
@@ -77,17 +96,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		050C312A2136E15B0046DDBF /* earth.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = earth.pdf; sourceTree = "<group>"; };
+		050C312B2136E15B0046DDBF /* little-earth.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "little-earth.pdf"; sourceTree = "<group>"; };
+		053F9AC52139B16E002335A0 /* TweenHandlers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TweenHandlers.h; sourceTree = "<group>"; };
+		053F9AC62139B16E002335A0 /* TweenHandlers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TweenHandlers.m; sourceTree = "<group>"; };
+		0556119E2126F82F00515AA9 /* PathLoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PathLoop.h; sourceTree = "<group>"; };
+		0556119F2126F82F00515AA9 /* PathLoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PathLoop.m; sourceTree = "<group>"; };
+		055611B72126FE0600515AA9 /* bee.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = bee.pdf; sourceTree = "<group>"; };
+		055611B92126FE0600515AA9 /* flower.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = flower.pdf; sourceTree = "<group>"; };
+		055611BC212DC7DB00515AA9 /* ArcOrbits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArcOrbits.h; sourceTree = "<group>"; };
+		055611BD212DC7DB00515AA9 /* ArcOrbits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArcOrbits.m; sourceTree = "<group>"; };
+		055611C1212DCF0000515AA9 /* bb8-body.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bb8-body.pdf"; sourceTree = "<group>"; };
+		055611C3212DD12C00515AA9 /* ScrollAims.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollAims.h; sourceTree = "<group>"; };
+		055611C4212DD12C00515AA9 /* ScrollAims.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollAims.m; sourceTree = "<group>"; };
+		055611C6212DD14300515AA9 /* AnimateArcRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateArcRadius.h; sourceTree = "<group>"; };
+		055611C7212DD14300515AA9 /* AnimateArcRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateArcRadius.m; sourceTree = "<group>"; };
+		055611C9212DD23400515AA9 /* eyepupil.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = eyepupil.pdf; sourceTree = "<group>"; };
+		055611CA212DD23500515AA9 /* sand.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sand.pdf; sourceTree = "<group>"; };
+		055611CD212EFAD500515AA9 /* bb8-head.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "bb8-head.pdf"; sourceTree = "<group>"; };
 		059B068A210F6FE300AA0D43 /* CocoaTweener.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CocoaTweener.xcodeproj; path = ../CocoaTweener.xcodeproj; sourceTree = "<group>"; };
 		059B06B6210F821500AA0D43 /* WindBlow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindBlow.m; sourceTree = "<group>"; };
 		059B06B8210F821500AA0D43 /* WindBlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindBlow.h; sourceTree = "<group>"; };
-		059B06B9210F821500AA0D43 /* ScrollAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollAnimation.m; sourceTree = "<group>"; };
+		059B06B9210F821500AA0D43 /* ScrollTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollTimeline.m; sourceTree = "<group>"; };
 		059B06BA210F821500AA0D43 /* TimelineBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineBasic.m; sourceTree = "<group>"; };
 		059B06BB210F821500AA0D43 /* AnimateText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateText.m; sourceTree = "<group>"; };
-		059B06BC210F821500AA0D43 /* ScrollAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollAnimation.h; sourceTree = "<group>"; };
+		059B06BC210F821500AA0D43 /* ScrollTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollTimeline.h; sourceTree = "<group>"; };
 		059B06BD210F821500AA0D43 /* TouchPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchPoint.h; sourceTree = "<group>"; };
 		059B06BE210F821600AA0D43 /* TouchPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchPoint.m; sourceTree = "<group>"; };
 		059B06BF210F821600AA0D43 /* TimelineBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineBasic.h; sourceTree = "<group>"; };
 		059B06C0210F821600AA0D43 /* AnimateText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateText.h; sourceTree = "<group>"; };
+		05A2A09B2136402500B23E42 /* little-sun.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "little-sun.pdf"; sourceTree = "<group>"; };
+		05A2A09D2136402500B23E42 /* little-jupyter.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "little-jupyter.pdf"; sourceTree = "<group>"; };
+		05A2A09E2136402500B23E42 /* little-saturn.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "little-saturn.pdf"; sourceTree = "<group>"; };
+		05A5E0E42137893000D7A08E /* orbits-background.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "orbits-background.pdf"; sourceTree = "<group>"; };
+		05A5E0E62137893000D7A08E /* little-sun-fire.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "little-sun-fire.pdf"; sourceTree = "<group>"; };
+		05A5E0E92138431100D7A08E /* SimpleTween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTween.h; sourceTree = "<group>"; };
+		05A5E0EA2138431100D7A08E /* SimpleTween.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTween.m; sourceTree = "<group>"; };
+		05A5E0EE2138554000D7A08E /* mars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mars.pdf; sourceTree = "<group>"; };
 		FAA2886020DD409B00F23485 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA2886320DD409B00F23485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAA2886420DD409B00F23485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,7 +148,6 @@
 		FACB8E5520DD415A006FD80B /* sunny.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sunny.pdf; sourceTree = "<group>"; };
 		FACB8E5620DD415A006FD80B /* comet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = comet.pdf; sourceTree = "<group>"; };
 		FACB8E5720DD415A006FD80B /* clouds2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = clouds2.pdf; sourceTree = "<group>"; };
-		FACB8E5820DD415A006FD80B /* heart.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = heart.pdf; sourceTree = "<group>"; };
 		FACB8E5920DD415A006FD80B /* moon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = moon.pdf; sourceTree = "<group>"; };
 		FACB8E5A20DD415A006FD80B /* clouds3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = clouds3.pdf; sourceTree = "<group>"; };
 		FACB8E5B20DD415A006FD80B /* ufo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ufo.pdf; sourceTree = "<group>"; };
@@ -143,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				FAA2886220DD409B00F23485 /* Examples */,
-				FACB8E5020DD415A006FD80B /* Resources */,
 				FACB8E6120DD415A006FD80B /* Samples */,
+				FACB8E5020DD415A006FD80B /* Resources */,
 				FAA2886120DD409B00F23485 /* Products */,
 				059B068A210F6FE300AA0D43 /* CocoaTweener.xcodeproj */,
 			);
@@ -175,6 +219,20 @@
 		FACB8E5020DD415A006FD80B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				05A5E0EE2138554000D7A08E /* mars.pdf */,
+				05A5E0E62137893000D7A08E /* little-sun-fire.pdf */,
+				05A5E0E42137893000D7A08E /* orbits-background.pdf */,
+				050C312A2136E15B0046DDBF /* earth.pdf */,
+				050C312B2136E15B0046DDBF /* little-earth.pdf */,
+				05A2A09D2136402500B23E42 /* little-jupyter.pdf */,
+				05A2A09E2136402500B23E42 /* little-saturn.pdf */,
+				05A2A09B2136402500B23E42 /* little-sun.pdf */,
+				055611CD212EFAD500515AA9 /* bb8-head.pdf */,
+				055611C9212DD23400515AA9 /* eyepupil.pdf */,
+				055611CA212DD23500515AA9 /* sand.pdf */,
+				055611C1212DCF0000515AA9 /* bb8-body.pdf */,
+				055611B72126FE0600515AA9 /* bee.pdf */,
+				055611B92126FE0600515AA9 /* flower.pdf */,
 				FACB8E5120DD415A006FD80B /* fire.pdf */,
 				FACB8E5220DD415A006FD80B /* jupyter.pdf */,
 				FACB8E5320DD415A006FD80B /* clouds1.pdf */,
@@ -182,7 +240,6 @@
 				FACB8E5520DD415A006FD80B /* sunny.pdf */,
 				FACB8E5620DD415A006FD80B /* comet.pdf */,
 				FACB8E5720DD415A006FD80B /* clouds2.pdf */,
-				FACB8E5820DD415A006FD80B /* heart.pdf */,
 				FACB8E5920DD415A006FD80B /* moon.pdf */,
 				FACB8E5A20DD415A006FD80B /* clouds3.pdf */,
 				FACB8E5B20DD415A006FD80B /* ufo.pdf */,
@@ -198,18 +255,30 @@
 		FACB8E6120DD415A006FD80B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				05A5E0E92138431100D7A08E /* SimpleTween.h */,
+				05A5E0EA2138431100D7A08E /* SimpleTween.m */,
+				053F9AC52139B16E002335A0 /* TweenHandlers.h */,
+				053F9AC62139B16E002335A0 /* TweenHandlers.m */,
+				FACB8E6620DD415A006FD80B /* PauseTweens.h */,
+				FACB8E7020DD415A006FD80B /* PauseTweens.m */,
 				059B06C0210F821600AA0D43 /* AnimateText.h */,
 				059B06BB210F821500AA0D43 /* AnimateText.m */,
-				059B06BC210F821500AA0D43 /* ScrollAnimation.h */,
-				059B06B9210F821500AA0D43 /* ScrollAnimation.m */,
+				059B06BC210F821500AA0D43 /* ScrollTimeline.h */,
+				059B06B9210F821500AA0D43 /* ScrollTimeline.m */,
 				059B06BF210F821600AA0D43 /* TimelineBasic.h */,
 				059B06BA210F821500AA0D43 /* TimelineBasic.m */,
 				059B06BD210F821500AA0D43 /* TouchPoint.h */,
 				059B06BE210F821600AA0D43 /* TouchPoint.m */,
 				059B06B8210F821500AA0D43 /* WindBlow.h */,
 				059B06B6210F821500AA0D43 /* WindBlow.m */,
-				FACB8E6620DD415A006FD80B /* PauseTweens.h */,
-				FACB8E7020DD415A006FD80B /* PauseTweens.m */,
+				0556119E2126F82F00515AA9 /* PathLoop.h */,
+				0556119F2126F82F00515AA9 /* PathLoop.m */,
+				055611BC212DC7DB00515AA9 /* ArcOrbits.h */,
+				055611BD212DC7DB00515AA9 /* ArcOrbits.m */,
+				055611C3212DD12C00515AA9 /* ScrollAims.h */,
+				055611C4212DD12C00515AA9 /* ScrollAims.m */,
+				055611C6212DD14300515AA9 /* AnimateArcRadius.h */,
+				055611C7212DD14300515AA9 /* AnimateArcRadius.m */,
 				FACB8E6C20DD415A006FD80B /* Assets */,
 			);
 			path = Samples;
@@ -307,22 +376,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACB8E7220DD415A006FD80B /* jupyter.pdf in Resources */,
-				FACB8E7820DD415A006FD80B /* heart.pdf in Resources */,
 				FACB8E7420DD415A006FD80B /* rocket.pdf in Resources */,
+				055611C2212DCF0000515AA9 /* bb8-body.pdf in Resources */,
+				055611BA2126FE0600515AA9 /* bee.pdf in Resources */,
+				05A5E0E82137893100D7A08E /* little-sun-fire.pdf in Resources */,
 				FACB8E7E20DD415A006FD80B /* sun.pdf in Resources */,
 				FACB8E7120DD415A006FD80B /* fire.pdf in Resources */,
+				05A2A0A02136402500B23E42 /* little-sun.pdf in Resources */,
 				FACB8E7C20DD415A006FD80B /* spaceman.pdf in Resources */,
 				FACB8E8020DD415A006FD80B /* saturn.pdf in Resources */,
 				FACB8E7320DD415A006FD80B /* clouds1.pdf in Resources */,
 				FACB8E7A20DD415A006FD80B /* clouds3.pdf in Resources */,
+				050C312C2136E15C0046DDBF /* earth.pdf in Resources */,
 				FACB8E7520DD415A006FD80B /* sunny.pdf in Resources */,
 				FAA2886D20DD409D00F23485 /* Assets.xcassets in Resources */,
 				FACB8E7620DD415A006FD80B /* comet.pdf in Resources */,
 				FACB8E7F20DD415A006FD80B /* dart.pdf in Resources */,
+				055611CB212DD23500515AA9 /* eyepupil.pdf in Resources */,
+				05A5E0E72137893100D7A08E /* orbits-background.pdf in Resources */,
 				FACB8E7B20DD415A006FD80B /* ufo.pdf in Resources */,
+				055611BB2126FE0600515AA9 /* flower.pdf in Resources */,
+				055611CE212EFAD500515AA9 /* bb8-head.pdf in Resources */,
+				050C312D2136E15C0046DDBF /* little-earth.pdf in Resources */,
+				05A2A0A12136402500B23E42 /* little-jupyter.pdf in Resources */,
+				055611CC212DD23500515AA9 /* sand.pdf in Resources */,
 				FACB8E7720DD415A006FD80B /* clouds2.pdf in Resources */,
 				FACB8E7D20DD415A006FD80B /* stars.pdf in Resources */,
 				FACB8E7920DD415A006FD80B /* moon.pdf in Resources */,
+				05A2A0A22136402500B23E42 /* little-saturn.pdf in Resources */,
+				05A5E0EF2138554000D7A08E /* mars.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,14 +417,20 @@
 			files = (
 				FACB8E8720DD415A006FD80B /* PauseTweens.m in Sources */,
 				FACB8E8520DD415A006FD80B /* AssetSample.m in Sources */,
+				055611C5212DD12C00515AA9 /* ScrollAims.m in Sources */,
 				059B06C5210F821600AA0D43 /* TouchPoint.m in Sources */,
 				059B06C4210F821600AA0D43 /* AnimateText.m in Sources */,
 				FAA2886820DD409B00F23485 /* ViewController.m in Sources */,
 				059B06C3210F821600AA0D43 /* TimelineBasic.m in Sources */,
 				059B06C1210F821600AA0D43 /* WindBlow.m in Sources */,
+				055611A02126F82F00515AA9 /* PathLoop.m in Sources */,
 				FAA2887320DD409D00F23485 /* main.m in Sources */,
+				055611C8212DD14300515AA9 /* AnimateArcRadius.m in Sources */,
 				FAA2886520DD409B00F23485 /* AppDelegate.m in Sources */,
-				059B06C2210F821600AA0D43 /* ScrollAnimation.m in Sources */,
+				059B06C2210F821600AA0D43 /* ScrollTimeline.m in Sources */,
+				055611BE212DC7DB00515AA9 /* ArcOrbits.m in Sources */,
+				053F9AC72139B16E002335A0 /* TweenHandlers.m in Sources */,
+				05A5E0EB2138431100D7A08E /* SimpleTween.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

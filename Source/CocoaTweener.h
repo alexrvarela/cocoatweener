@@ -21,8 +21,16 @@
 #import "Ease.h"
 //Utils
 #import "TimelineInspector.h"
+#import "BezierPathUtils.h"
+#import "BasicMath.h"
+//#import "PathInspector.h"//TODO:PathInspector
 #import "PDFImageRender.h"
 #import "PDFImageView.h"
+//Aims
+#import "RotationAim.h"
+#import "PathAim.h"
+#import "ArcAim.h"
+#import "StringAim.h"
 
 @interface CocoaTweener : NSObject
 
@@ -35,8 +43,8 @@
 
 //Add Tweens
 +(void)addTween:(Tween*)tween;
-//Remove tweens
-//+(BOOL)removeTween:(Tween*)tween;//TODO:remove by specific Tween id
+//+(BOOL)removeTween:(Tween*)tween;//TODO:remove by specific Tween
++(BOOL)removeTweens:(id)target keyPaths:(NSArray*)keys;
 +(BOOL)removeTweens:(id)target;
 +(BOOL)removeAllTweens;
 //Pause tweens

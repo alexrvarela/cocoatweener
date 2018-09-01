@@ -11,13 +11,14 @@
 
 @implementation TouchPoint
 
--(id)init
+-(id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    self = [super initWithFrame:frame];
     
     if (self)
     {
         self.backgroundColor = [UIColor colorWithRed:69.0f/255.0f green:255.0f/255.0f blue:247.0f/255 alpha:1.0f];
+        self.clipsToBounds = YES;
         [self makeAssets];
     }
     

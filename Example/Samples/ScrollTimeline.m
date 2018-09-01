@@ -1,19 +1,19 @@
 //
-//  ScrollAnimation.m
+//  ScrollTimeline.m
 //  CocoaTweener
 //
 //  Created by Alejandro Ramirez Varela on 4/5/18.
 //  Copyright © 2018 Alejandro Ramirez Varela. All rights reserved.
 //
 
-#import "ScrollAnimation.h"
+#import "ScrollTimeline.h"
 #import <CocoaTweener/CocoaTweener.h>
 
-@implementation ScrollAnimation
+@implementation ScrollTimeline
 
--(id)init
+-(id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    self = [super initWithFrame:frame];
     
     if(self)
     {
@@ -26,10 +26,8 @@
         self.timeline = [[Timeline alloc] init];
         
         self.scrollview = [[UIScrollView alloc] initWithFrame:self.bounds];
-
         self.scrollview.contentSize = CGSizeMake(self.scrollview.frame.size.width, 3000.0f);
         self.scrollview.contentInset = UIEdgeInsetsMake(-225, 0, -225, 0);
-
         self.scrollview.delegate = self;
         [self addSubview:self.scrollview];
         
@@ -42,14 +40,18 @@
         self.sun = [self addAsset:@"sun"];
         self.sun.scale = 4.0f;
         self.sun.center = self.center;
-
-        self.saturn = [self addAsset:@"saturn"];
         
-        self.heart = [self addAsset:@"heart"];
-        self.heart.center = self.center;
+        self.earth = [self addAsset:@"earth"];
+        self.earth.center = self.center;
+        
+        self.mars = [self addAsset:@"mars"];
+        self.mars.center = self.center;
         
         self.jupyter = [self addAsset:@"jupyter"];
         self.jupyter.center = self.center;
+        
+        self.saturn = [self addAsset:@"saturn"];
+        self.saturn.center = self.center;
         
         self.ufo = [self addAsset:@"ufo"];
         self.ufo.center = self.center;
@@ -115,12 +117,12 @@
                                  ]];
         
         //HEARTH
-        nFrame = self.heart.frame;
+        nFrame = self.earth.frame;
         nFrame.origin.y = self.frame.size.height;
-        self.heart.frame = nFrame;//initial value
-        nFrame.origin.y = -self.heart.frame.size.height;//destination value
+        self.earth.frame = nFrame;//initial value
+        nFrame.origin.y = -self.earth.frame.size.height;//destination value
         
-        [self.timeline addTween:[[Tween alloc] init:self.heart
+        [self.timeline addTween:[[Tween alloc] init:self.earth
                                            duration:2.5f
                                                ease:kEaseNone
                                                keys:@{
@@ -167,16 +169,16 @@
                                  ]];
 
         
-        //SATURN
-        nFrame = self.saturn.frame;
+        //MARS
+        nFrame = self.mars.frame;
         
-        nFrame.origin.x = self.frame.size.width - 54 - self.saturn.frame.size.width;
+        nFrame.origin.x = 54.0f;
         nFrame.origin.y = self.frame.size.height;
-        self.saturn.frame = nFrame;//initial value
+        self.mars.frame = nFrame;//initial value
         
-        nFrame.origin.y = -self.saturn.frame.size.height;//destination value
+        nFrame.origin.y = -self.mars.frame.size.height;//destination value
         
-        [self.timeline addTween:[[Tween alloc] init:self.saturn
+        [self.timeline addTween:[[Tween alloc] init:self.mars
                                            duration:1.0f
                                                ease:kEaseNone
                                                keys:@{
@@ -221,6 +223,24 @@
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
                                               delay:5.0f
+                                 ]];
+        
+        //SATURN
+        nFrame = self.saturn.frame;
+        
+        nFrame.origin.x = self.frame.size.width - 54 - self.saturn.frame.size.width;
+        nFrame.origin.y = self.frame.size.height;
+        self.saturn.frame = nFrame;//initial value
+        
+        nFrame.origin.y = -self.saturn.frame.size.height;//destination value
+        
+        [self.timeline addTween:[[Tween alloc] init:self.saturn
+                                           duration:1.5f
+                                               ease:kEaseNone
+                                               keys:@{
+                                                      @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
+                                                      }
+                                              delay:7.0f
                                  ]];
         
 

@@ -6,10 +6,10 @@
 //  Copyright © 2018 Alejandro Ramirez Varela. All rights reserved.
 //
 
-#import "KVCUtils.h"
 #import <UIKit/UIKit.h>
-#import "Equations.h"
 #import <objc/runtime.h>
+#import "Equations.h"
+#import "KVCUtils.h"
 
 @implementation KVCUtils
 
@@ -43,7 +43,7 @@
     NSString * typeString = [self getTypeString:value];
     int size = 0;
     
-    //TODO support mote types
+    //TODO support more types
     if ([typeString isEqualToString:[NSString stringWithUTF8String:@encode(float)]]){size = 1;}
     else if ([typeString isEqualToString:[NSString stringWithUTF8String:@encode(CGFloat)]]){size = 1;}
     else if ([typeString isEqualToString:[NSString stringWithUTF8String:@encode(double)]]){size = 1;}

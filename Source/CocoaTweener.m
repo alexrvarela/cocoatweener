@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "CocoaTweener.h"
 
-
 static NSMutableArray<TweenControl*>* controlList;
 static NSMutableArray<Timeline*>* timelineList;
 static NSDate *initTime;
@@ -22,9 +21,6 @@ static BOOL initied = NO;
 static BOOL isTweening = NO;
 static BOOL autoOverwrite = YES;
 
-//TODO: make enumerators for equations
-//TODO: enum to ToString
-
 @implementation CocoaTweener
 
 #pragma mark - Initialize
@@ -36,7 +32,7 @@ static BOOL autoOverwrite = YES;
     initTime = [[NSDate alloc] init];
     autoOverwrite = YES;
     initied = YES;
-    timeScale = 1;
+    timeScale = 1.0f;
 }
 
 +(BOOL)initied{return initied;}//accesor
@@ -65,13 +61,9 @@ static BOOL autoOverwrite = YES;
         
         [controlList addObject:tc];
         
-        //Immediate update and removal if it's an immediate tween
-        
-        //TODO:remove?
         //if not deleted, it executes at the end of this frame execution
-        if ((currentTime + tc.timeStart <= currentTime &&
-             currentTime + tc.timeComplete <= currentTime) ||
-            tc.completed)
+        if ( (currentTime + tc.timeStart <= currentTime &&
+              currentTime + tc.timeComplete <= currentTime) )
         {
             NSInteger myT = [controlList count] - 1;
             [self updateTween:tc currentTime:[self getCurrentTime]];//replace
@@ -161,8 +153,6 @@ static BOOL autoOverwrite = YES;
         
         if (tc != nil && tc.state != kTweenStatePaused)
         {
-            //printf("update tween : %i\n", (int)indexTween);
-            
             BOOL update =  [self updateTween:tc currentTime:[self getCurrentTime]];
             
             if (!update)[self removeTweenByIndex:[NSNumber numberWithInteger:indexTween] finalRemoval:NO list:controlList];
@@ -191,7 +181,8 @@ static BOOL autoOverwrite = YES;
     for (TweenControl* tc in timeline.controllerList)
     {
         //if( (cTime >= tc.timeStart) && (cTime < tc.timeComplete))
-            [self updateValues:tc currentTime:cTime];
+        [self updateValues:tc currentTime:cTime];
+        
         //TODO:if timestart < time set start value
         //TODO:if timestart + timeComplete >= time set complete value
     }
@@ -218,7 +209,6 @@ static BOOL autoOverwrite = YES;
         {
             if (timeline.state == kTimelineStateOver)
             {
-                printf("timeline is paused, remove\n");
                 [self removeTimeline:timeline];
                 indexTimeline--;
             }else
@@ -227,14 +217,10 @@ static BOOL autoOverwrite = YES;
                 {
                     if (([self getCurrentTime] - timeline.timeStart) >= (timeline.timeComplete - timeline.timeStart))
                     {
-                        printf("Timeline is over\n");
-                        
                         if (timeline.playMode == kTimelinePlayModeOnce)
                         {
-                            printf("Play once, remove\n");
                             timeline.state = kTimelineStateOver;
                             [self removeTimeline:timeline];
-                            //[timelineList removeObjectAtIndex:indexTimeline];
                             indexTimeline--;
                         }
                         else
@@ -261,25 +247,9 @@ static BOOL autoOverwrite = YES;
                     }
                     else
                     {
-                        //printf("timeline has started\n");
-                        timeline.state = kTimelineStateStarted;
+
                         float timelineTime = [self getCurrentTime] - timeline.timeStart;
-                        //float reverseTime  = timeline.timeComplete - timelineTime;
-                        
-                        //printf("time start : %f\n", timeline.timeStart);
-                        //printf("time complete : %f\n", timeline.timeComplete);
-                        //printf("timelineTime : %f\n", timelineTime);
-                        //printf("reverseTime  : %f\n", reverseTime);
-                        //Set time direction
-                        
-                        //printf("Timeline started, update tweens!\n");
-                        
-                        /*
-                         printf("\nCurrent time : %f\n", timeline.reverse ? reverseTime : [self getCurrentTime]);
-                         printf("Timeline time start : %f\n", timeline.timeStart);
-                         printf("Timeline time complete : %f\n", timeline.timeComplete);
-                         //*/
-                        
+
                         //Update all timeline Tweens
                         
                         for (NSInteger indexTween = 0; indexTween < ([timeline.controllerList count]); indexTween ++)
@@ -291,21 +261,22 @@ static BOOL autoOverwrite = YES;
                             //Ignore if tween is paused or not, controlled by timeline
                             if (!timeline.reverse)
                             {
-                                //Use engine
-                                //TODO:Update if tween is in time range
+                                //Use engine, enable Tween handlers
                                 //if( ((timelineTime >= tc.timeStart) && (timelineTime < tc.timeComplete)))//if timeline !started update
                                 [self updateTween:tc currentTime:timelineTime];
                             }else
                             {
-                                //printf("reverse : %f\n", reverseTime);
-                                //printf("reverse\n");
-                                //Update values only, ignore completion handlers if timeline direction is reversed
+                                //Update values directly, ignore Tween handlers if timeline direction is reversed
                                 //TODO:Update if tween is in time range calculate reverse range
-                                [self updateValues:tc currentTime:timeline.duration - timelineTime];//reverse toime
+                                [self updateValues:tc currentTime:timeline.duration - timelineTime];
                             }
                         }
                         
-                        if(timeline.state != kTimelineStateStarted)timeline.state = kTimelineStateStarted;
+                        if(timeline.state != kTimelineStateStarted)
+                        {
+                            timeline.state = kTimelineStateStarted;
+                        }
+                        
                         timeline.timeCurrent = timeline.reverse ? (timeline.timeComplete - timelineTime) : [self getCurrentTime];
                     }
                 }
@@ -321,6 +292,7 @@ static BOOL autoOverwrite = YES;
 //Foward update
 +(BOOL)updateTween:(TweenControl*)tweenControl currentTime:(float)currentTime
 {
+//    printf("updateTween\n");
     if (tweenControl == nil || tweenControl.tween.target == nil || tweenControl.tween.keys == nil) return NO;
 
     if (currentTime >= tweenControl.timeStart && tweenControl.state != kTweenStateOver)
@@ -341,6 +313,9 @@ static BOOL autoOverwrite = YES;
         {
             tweenControl.state = kTweenStateStarted;
             
+            //refresh properties!
+            if (!tweenControl.isTimelineTween && tweenControl.tween.timeDelay > 0.0f){[tweenControl setupController];}
+            
             if (tweenControl.tween.onStartHandler != nil)
             {
                 tweenControl.tween.onStartHandler();
@@ -360,8 +335,8 @@ static BOOL autoOverwrite = YES;
         return (!isOver);
     }else
     {
-        if(tweenControl.state == kTweenStateInitial)printf("tween not started\n");
-        if(tweenControl.state == kTweenStateOver)printf("tween is over\n");
+//        if(tweenControl.state == kTweenStateInitial)printf("tween not started\n");
+//        if(tweenControl.state == kTweenStateOver)printf("tween is over\n");
     }
     
     // On delay, hasn't started, so returns true
@@ -484,6 +459,8 @@ static BOOL autoOverwrite = YES;
              timeComplete:(float)p_timeComplete
                      list:(NSMutableArray<TweenControl*>*)list
 {
+    printf("remove tweens by time\n");
+    
     BOOL removed = NO;
     BOOL removedLocally;
     
@@ -558,6 +535,11 @@ static BOOL autoOverwrite = YES;
 +(BOOL)removeTweens:(id)target
 {
     return [self removeTweens:target list:controlList];
+}
+
++(BOOL)removeTweens:(id)target keyPaths:(NSArray*)keys
+{
+    return [self removeTweens:target keyPaths:keys list:controlList];
 }
 
 //remove al tween keys from a specific target
@@ -704,7 +686,6 @@ static BOOL autoOverwrite = YES;
     
     float cTime = [self getCurrentTime];
     tc.timeStart = cTime - tc.timePaused;
-    //tc.timeComplete += cTime - tc.timePaused;
     tc.timePaused = 0.0f;
     tc.state = tc.lastState;//resume
     return YES;

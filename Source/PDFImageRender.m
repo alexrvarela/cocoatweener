@@ -81,7 +81,6 @@
 
     //Draw it and generate UIImage
     CGContextDrawPDFPage(context, PDFPageRef);
-    //Get UIImage
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

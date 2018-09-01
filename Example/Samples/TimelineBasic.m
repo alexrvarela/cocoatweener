@@ -49,9 +49,9 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
 
 @implementation TimelineBasic
 
--(id)init
+-(id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    self = [super initWithFrame:frame];
     
     if (self)
     {

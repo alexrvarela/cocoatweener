@@ -26,7 +26,10 @@
     {
         self.tween = tween;
         self.timeStart = timeStart;
+        self.isTimelineTween = NO;
         [self resetState];//todo:enum states
+        
+//        printf("TweenControl init completed : %s\n", self.completed ? "true" : "false");
     }
     
     return self;
@@ -34,6 +37,8 @@
 
 -(BOOL)completed
 {
+    
+    //if (self.state != kTweenStateOver)return NO;
     BOOL completed = YES;
     
     for (TweenValues* v in (NSArray<TweenValues*>*) [self.properties allValues])

@@ -45,6 +45,9 @@
     //Make controller
     TweenControl* nController = [[TweenControl alloc] init:tween
                                                        timeStart:tween.timeDelay / [CocoaTweener getTimeScale]];
+    nController.isTimelineTween = YES;
+    
+    //TODO:Bind parameters
     
     //[nTween setKeys:tween.keys];//set values
     

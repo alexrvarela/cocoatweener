@@ -13,24 +13,12 @@
 //}
 
 #import "WindBlow.h"
-#import <CocoaTweener/CocoaTweener.h>
-#define ARC4RANDOM_MAX      0x100000000
-
-static inline float GetRandomFloat(float number)
-{
-    return ((float)arc4random() / ARC4RANDOM_MAX) * number;
-}
-
-static inline float GetRandomFloatRange(float Maxvalue, float MinValue)
-{
-    return GetRandomFloat((Maxvalue - MinValue)) + MinValue;
-}
 
 @implementation WindBlow
 
--(id)init
+-(id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    self = [super initWithFrame:frame];
     
     if (self)
     {
@@ -45,9 +33,9 @@ static inline float GetRandomFloatRange(float Maxvalue, float MinValue)
         [self addSubview:sunny];
         
         UIView* grass = [[UIView alloc] initWithFrame:CGRectMake(0.0f,
-                                                                 self.frame.size.height * 0.75f,
+                                                                 self.frame.size.height * 0.85f,
                                                                  self.frame.size.width,
-                                                                 self.frame.size.height * 0.25f)];
+                                                                 self.frame.size.height * 0.15f)];
         grass.backgroundColor = [UIColor colorWithRed:130.0f/255.0f green:255.0f/255.0f blue:170.0f/255 alpha:1.0f];
         [self addSubview:grass];
         
@@ -59,43 +47,56 @@ static inline float GetRandomFloatRange(float Maxvalue, float MinValue)
         
         b.backgroundColor = [UIColor colorWithRed:0.0f green:0.0f blue:140.0f/255 alpha:1.0f];
         [self addSubview:b];
-        
-        self.asset = [[PDFImageView alloc] init];
-        [self.asset loadFromBundle:@"dart"];
-         CGPoint c = self.center;
-        c.y = self.frame.size.height - 280.0f;
-        self.asset.center = c;
-        [self addSubview:self.asset];
 
+        self.dart1 = [[PDFImageView alloc] init];
+        [self.dart1 loadFromBundle:@"dart"];
+        self.dart1.scale = 0.25f;
+        self.dart1.center = CGPointMake(self.frame.size.width * 0.75, self.frame.size.height - 120.0f);
+        [self addSubview:self.dart1];
+        
+        self.dart2 = [[PDFImageView alloc] init];
+        [self.dart2 loadFromBundle:@"dart"];
+        self.dart2.scale = 0.5f;
+        self.dart2.center = CGPointMake(self.center.x * 0.5, self.frame.size.height - 150.0f);
+        [self addSubview:self.dart2];
+        
+        self.dart3 = [[PDFImageView alloc] init];
+        [self.dart3 loadFromBundle:@"dart"];
+        self.dart3.center = CGPointMake(self.center.x, self.frame.size.height - 280.0f);
+        [self addSubview:self.dart3];
         
         self.blow = 0.0f;
+        
+        self.rotation = [[RotationAim alloc] init];
+        
+        __weak typeof(self) weakself = self;
+        self.rotation.onUpdateRotation = ^(CGFloat rotation)
+        {
+            weakself.dart1.transform = CGAffineTransformMakeRotation(rotation);
+            weakself.dart2.transform = CGAffineTransformMakeRotation(rotation);
+            weakself.dart3.transform = CGAffineTransformMakeRotation(rotation);
+        };
+        
         [self animate];
     }
     
     return self;
 }
 
--(void)setBlow:(float)interpolation
-{
-    float multiplier = 360.0f;
-    float degree = (interpolation - floor(interpolation)) * multiplier;
-    self.asset.transform = CGAffineTransformMakeRotation(degree * M_PI / 180.0);
-    _blow = interpolation;
-}
-
 -(void)animate
 {
-    float random = GetRandomFloatRange(5.0f, 1.0f);
+    float random = [BasicMath randomIntRange:5.0f min:1.0f];
     
-    [CocoaTweener addTween:[[Tween alloc] init:self
+    [CocoaTweener addTween:[[Tween alloc] init:self.rotation
                                       duration:random * 2.0f
                                           ease:kEaseInOutQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                [NSNumber numberWithFloat:random], @"blow",//TODO: set random
+                                                [NSNumber numberWithFloat:random], @"distance",
                                                 nil]
                                          delay:0.0f
                                     completion:^{[self animate];}
                             ]];
+    
 }
 
 @end

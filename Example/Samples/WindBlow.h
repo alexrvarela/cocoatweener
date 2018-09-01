@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CocoaTweener/CocoaTweener.h>
-#import <CocoaTweener/PDFImageView.h>
 
 @interface WindBlow : UIView
 
-@property (strong) PDFImageView* asset;
+@property (strong) PDFImageView* dart1;
+@property (strong) PDFImageView* dart2;
+@property (strong) PDFImageView* dart3;
 @property (nonatomic) float blow;
+@property (nonatomic) RotationAim* rotation;
 
 @end

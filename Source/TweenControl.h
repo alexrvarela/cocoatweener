@@ -33,6 +33,7 @@ kTweenState;
 @property (nonatomic) float timeStart;
 @property float timeComplete;
 @property float timePaused;
+@property float isTimelineTween;
 //Tween states
 @property (nonatomic) kTweenState state;
 @property (nonatomic, readonly) kTweenState lastState;

@@ -7,16 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
 #import <CocoaTweener/CocoaTweener.h>
 
 @interface AnimateText : UIView
 
 @property (strong) UILabel* label;
 @property (strong) NSArray<NSString*>* words;
-@property (strong) NSString* currentString;
-@property (nonatomic) float interpolation;
-@property (strong) Tween* hideText;
-@property (strong) Tween* showText;
+//@property (strong) NSString* currentString;
+//@property (nonatomic) float interpolation;
+@property (strong) StringAim* aim;
+//@property (strong) Tween* hideText;//Deprecate
+//@property (strong) Tween* showText;//Deprecate
 
 @end

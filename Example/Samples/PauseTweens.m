@@ -10,17 +10,16 @@
 #import "PauseTweens.h"
 
 #import <CocoaTweener/CocoaTweener.h>
-#import <CocoaTweener/PDFImageView.h>
 
 @implementation PauseTweens
 
--(id)init
+-(id)initWithFrame:(CGRect)frame
 {
-    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+    self = [super initWithFrame:frame];
     
     if (self)
     {
-        self.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:210.0f/255.0f blue:210.0f/255 alpha:1.0f];
+        self.backgroundColor = [UIColor colorWithRed:0.0f/255.0f green:230.0f/255.0f blue:240.0f/255 alpha:1.0f];
         self.clipsToBounds = YES;
         
         CGSize screenSize = UIScreen.mainScreen.bounds.size;

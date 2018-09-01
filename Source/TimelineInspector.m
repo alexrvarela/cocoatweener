@@ -959,11 +959,10 @@ static inline CGPathRef CGPathMakeRoundRect(CGRect rect, CGFloat cornerRadius)
     [self.timeline rewind];
 }
 
-
 -(void)updatePlayButtonIcons
 {
-    BOOL stopped = self.timeline.state == kTimelineStatePaused || self.timeline.state == kTimelineStateOver;
-    //printf("stopped? %s\n", stopped ? "yes" : "no");
+    BOOL stopped = self.timeline.state == kTimelineStatePaused || self.timeline.state == kTimelineStateOver || self.timeline.state == kTimelineStateInitial;
+
     [[self.playButton.layer sublayers] objectAtIndex:0].hidden = !stopped;
     [[self.playButton.layer sublayers] objectAtIndex:1].hidden = stopped;
 }

@@ -72,17 +72,17 @@
                                         UIScreen.mainScreen.bounds.size.width,
                                         UIScreen.mainScreen.bounds.size.height - 40.0f);
         
-//        [self.container addSubview:[[SimpleTween alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[TweenHandlers alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[ArcOrbits alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[AnimateArcRadius alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[ScrollAims alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[PathLoop alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[TouchPoint alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[AnimateText alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[PauseTweens alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[WindBlow alloc] initWithFrame:contentFrame]];
-//        [self.container addSubview:[[ScrollTimeline alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[SimpleTween alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[TweenHandlers alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[ArcOrbits alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[AnimateArcRadius alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[ScrollAims alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[PathLoop alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[TouchPoint alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[AnimateText alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[PauseTweens alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[WindBlow alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[ScrollTimeline alloc] initWithFrame:contentFrame]];
         [self.container addSubview:[[TimelineBasic alloc] initWithFrame:contentFrame]];
 
         float x = 0.0f;

@@ -57,10 +57,13 @@
     if (self.timeline.playMode == kTimelinePlayModeLoop)
     {
         self.timeline.playMode = kTimelinePlayModePingPong;
+        self.circle.backgroundColor = [UIColor colorWithRed:255.0f/255.0f green:120.0f/255.0f blue:180.0f/255 alpha:1.0f];
     }else
     {
         self.timeline.playMode = kTimelinePlayModeLoop;
         self.timeline.reverse = false;
+        self.circle.backgroundColor = [UIColor colorWithRed:80.0f/255.0f green:220.0f/255.0f blue:170.0f/255 alpha:1.0f];
+
     }
 }
 

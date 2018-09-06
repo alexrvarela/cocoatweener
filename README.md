@@ -128,7 +128,11 @@ By specific properties of a target:
 [CocoaTweener removeTweens:myView keyPaths:@["backgroundColor", "alpha"];
 ```
 
+Unleash your creativity!
+
 ![Touch point](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/touch.gif)
+
+![Touch point](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/drag.gif)
 
 ### Timeline
 

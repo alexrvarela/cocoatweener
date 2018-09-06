@@ -65,7 +65,7 @@
         self.moon = [self addAsset:@"moon"];
         self.moon.scale = 5.0f;
         self.moon.center = self.center;
-
+        
         self.spaceman = [self addAsset:@"spaceman"];
         self.spaceman.center = self.center;
         
@@ -83,7 +83,7 @@
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
-                                              delay:0.51f
+                                              delay:0.8f
                                  ]];
         
         //SUN
@@ -98,7 +98,7 @@
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
-                                              delay:0.0
+                                              delay:0.5
                                  ]];
         
         //MOON
@@ -128,7 +128,7 @@
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
-                                              delay:0.75f
+                                              delay:0.85f
                                  ]];
         
         //SPACEMAN
@@ -167,7 +167,7 @@
                                                       }
                                               delay:2.5f
                                  ]];
-
+        
         
         //MARS
         nFrame = self.mars.frame;
@@ -243,7 +243,7 @@
                                               delay:7.0f
                                  ]];
         
-
+        
     }
     
     return self;

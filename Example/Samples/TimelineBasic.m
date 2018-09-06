@@ -67,7 +67,6 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
 
 -(void)makeInstances
 {
-
     //---- Shape 1 ----
     self.asset1 = [[AssetSample alloc] initWithFrame:CGRectMake(0.0f, 20.0f + 75.0f, 50.0f, 50.0f)];
     self.asset1.backgroundColor = [UIColor whiteColor];

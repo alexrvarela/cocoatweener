@@ -164,25 +164,21 @@ Perform parallax scrolling effects controlling your timeline with UIScrollView:
 ![Timeline scroll](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/tmeline-scroll.gif)
 
 
-You can use the Timeline inspector to debug:
+### TimelineInspector
+You can use the Timeline inspector to debug  and edit Tweens 
 
 ![Visualize Tweens in real time!](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/tmeline-inspector.gif)
 
+![Edit Tweens](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/timeline-editor.gif)
 
-### TimelineInspector
-Inspect and edit Tweens, to create Timeline inspector:
+![Scale timeline editor](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/timeline-zoom.gif)
 
+To create Timeline inspector:
 ```objc
 TimelineInspector* myInspector = [[TimelineInspector alloc] init];
 myInspector.timeline = myTimeline;
 [self addSubview:myInspector];
 ```
-
-![Edit Tweens](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/timeline-editor.gif)
-
-
-![Scale timeline editor](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/timeline-zoom.gif)
-
 
 ### PDFImageView
 
@@ -252,7 +248,17 @@ Animate rotation of any view
 ![Rotation aim](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/rotation-aim.gif)
 
 ```objc
+RotationAim* myRotationAim = [[RotationAim alloc] init];
+myRotationAim.tweenPath.target = myView;
+myRotationAim.angle = 90.0f;
 
+Tween* myTween = [[Tween alloc] init:myRotationAim
+                                  duration:1.5f
+                                      ease:kEaseInOutCubic
+                                      keys:@{ @"angle" : @180.0f }
+                        ];
+
+[CocoaTweener addTween:myTween];
 ```
 
 ### ArcAim
@@ -261,7 +267,18 @@ Create Arc animations
 ![Arc aims](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/orbits.gif)
 
 ```objc
+RotationAim* myArcAim = [[RotationAim alloc] init];
+myArcAim.tweenPath.target = myView;
+myArcAim.radius = 100.0f;
+myArcAim.arcAngle = 0.0f;
 
+Tween* myTween = [[Tween alloc] init:myArcAim
+                                  duration:1.5f
+                                      ease:kEaseInOutCubic
+                                      keys:@{ @"arcAngle" : @360.0f }
+                        ];
+
+[CocoaTweener addTween:myTween];
 ```
 
 ### StringAim
@@ -270,7 +287,19 @@ Animate text transitions
 ![String aims](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/text.gif)
 
 ```objc
+StringAim* myStringAim = [[StringAim alloc] init];
+myStringAim.from = @"hello";
+myStringAim.to = @"hola";
+myStringAim.target = myLabel;
+myStringAim.interpolation = 0.0;
 
+Tween* myTween = [[Tween alloc] init:myStringAim
+                                  duration:1.5f
+                                      ease:kEaseNone
+                                      keys:@{ @"interpolation" : @1.0f }
+                        ];
+
+[CocoaTweener addTween:myTween];
 ```
 
 Play with everything, combine different types of Aim:

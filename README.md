@@ -44,7 +44,7 @@ To install dependencies run this command
 ```
 $ carthage update
 ```
-Finally, drag & drop CocoaTweenr.framework to your Xcode Project
+Finally, drag & drop CocoaTweener.framework to your Xcode Project
 
 ### Install manually
 
@@ -130,9 +130,11 @@ By specific properties of a target:
 
 Unleash your creativity!
 
-![Touch point](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/touch.gif)
+![Touch](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/touch.gif)
 
-![Touch point](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/drag.gif)
+![Drag ](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/drag.gif)
+
+![Background animations](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/clouds.gif)
 
 ### Timeline
 
@@ -140,7 +142,7 @@ Add a Tween or animate with Timeline?
 
 It depends on what you want, a Tween only animates “to” desired value taking the current value of the property as origin, that allows your App to be more dynamic, each Tween is destroyed immediately after completing the animation.
 
-Timeline stores “from” and “to” values of each Tween, contains a collection of reusable Tweens, to create Timeline and add Tweens:
+Timeline stores “from” and “to” values of each Tween, contains a collection of reusable Tweens, to create Timeline and add Tweens use this code:
 
 ```objc
 Timeline* myTimeline = [[Timeline alloc] init];
@@ -169,7 +171,7 @@ Perform parallax scrolling effects controlling your timeline with UIScrollView:
 
 
 ### TimelineInspector
-You can use the Timeline inspector to debug  and edit Tweens 
+You can use the Timeline inspector to debug  and edit Tweens
 
 ![Visualize Tweens in real time!](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/tmeline-inspector.gif)
 
@@ -186,7 +188,7 @@ myInspector.timeline = myTimeline;
 
 ### PDFImageView
 
-Cut with the image dependency and easily import your vector assets using PDFImageView, forget to export to SVG and other formats iOs offers native support for PDF with CoreGraphics with this class that simply renders one pdf inside a UIImageView.
+Cut with the image dependency and easily import your vector assets using PDFImageView, forget to export to SVG and other formats iOs offers native support for PDF with CoreGraphics, this class that simply renders one pdf inside a UIImageView.
 
 To load your asset named "bee.pdf" from App bundle:
 
@@ -201,8 +203,6 @@ You can increase or reduce the size of your assets with a simple property:
 ```objc
 myAsset.scale = 1.5f;
 ```
-
-![Clouds](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/clouds.gif)
 
 ### Aims
 Create more complex and impressive animations using Aims
@@ -310,7 +310,7 @@ Play with everything, combine different types of Aim:
 
 ![Mix different aims](https://raw.githubusercontent.com/alexrvarela/cocoatweener/master/Gifs/bb8.gif)
 
-This library was created to give dynamism to the elements of the UI, if you are looking to make more complex animations I recommend you implement them using [Lottie](https://airbnb.design/lottie/).
+This library was created to give dynamism to the elements of the UI, if you are looking to make more complex animations I recommend you implement them with [Lottie](https://airbnb.design/lottie/).
 
 ## Contributions
 

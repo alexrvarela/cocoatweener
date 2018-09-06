@@ -188,7 +188,7 @@ myInspector.timeline = myTimeline;
 
 ### PDFImageView
 
-Cut with the image dependency and easily import your vector assets using PDFImageView, forget to export to SVG and other formats iOs offers native support for PDF with CoreGraphics, this class that simply renders one pdf inside a UIImageView.
+Cut with the image dependency and easily import your vector assets using PDFImageView, forget to export to SVG and other formats iOs offers native support for PDF with CoreGraphics, this class simply renders one pdf inside a UIImageView.
 
 To load your asset named "bee.pdf" from App bundle:
 

@@ -1,5 +1,5 @@
 //
-//  DragView.h
+//  SimpleTimeline.h
 //  Examples
 //
 //  Created by Alejandro Ramirez Varela on 9/5/18.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CocoaTweener/CocoaTweener.h>
+@interface SimpleTimeline : UIView
 
-@interface DragView : UIView
-
-@property UIView* dragView;
-@property CGPoint frameOrigin;
-@property NSUInteger viewIndex;
+@property UIView* circle;
+@property Timeline* timeline;
 
 @end

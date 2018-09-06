@@ -11,10 +11,7 @@
 
 @interface WindBlow : UIView
 
-@property (strong) PDFImageView* dart1;
-@property (strong) PDFImageView* dart2;
-@property (strong) PDFImageView* dart3;
-@property (nonatomic) float blow;
+@property (strong) PDFImageView* dart;
 @property (nonatomic) RotationAim* rotation;
 
 @end

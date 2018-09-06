@@ -30,7 +30,8 @@
             NSUInteger index = i - 1;
             PDFImageView* view = [[PDFImageView alloc] init];
             [view loadFromBundle:@"card"];
-            view.frame = CGRectMake(20.0f, 20.0f + 120.0 * index, 280.0f, 100.0f);
+            view.scale = (self.frame.size.width - 40.0f) / view.frame.size.width;
+            view.frame = CGRectMake(20.0f, 20.0f + (view.frame.size.height + 20.0f) * index, view.frame.size.width, view.frame.size.height);
             view.backgroundColor = [colors objectAtIndex:index];
             view.layer.cornerRadius = 10.0f;
             [self addSubview:view];
@@ -80,7 +81,7 @@
             
             for (NSUInteger i = 0; i < self.subviews.count; i++)
             {
-                float _y = 20.0f + 120.0 * i + 20.0f + 120.0;
+                float _y = 20.0f + (self.dragView.frame.size.height + 20.0f) * i + self.dragView.frame.size.height;
                 
                 if (self.dragView.frame.origin.y < _y)
                 {
@@ -111,14 +112,14 @@
 -(void)alingViews
 {
     NSUInteger index = self.subviews.count - 1;
-
+    
     for (UIView* view in self.subviews)
     {
         if (self.dragView == nil || self.viewIndex != [self.subviews indexOfObject:view])
         {
             [CocoaTweener removeTweens:view];
             NSValue* destinationFrame = [NSValue valueWithCGRect:CGRectMake(20.0f,
-                                                                            20.0f + 120.0 * index,
+                                                                            20.0f + (view.frame.size.height + 20.0f) * index,
                                                                             view.frame.size.width,
                                                                             view.frame.size.height)];
             [CocoaTweener addTween:[[Tween alloc] init:view

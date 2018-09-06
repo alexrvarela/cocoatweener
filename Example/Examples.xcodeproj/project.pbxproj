@@ -34,6 +34,8 @@
 		05A5E0E82137893100D7A08E /* little-sun-fire.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0E62137893000D7A08E /* little-sun-fire.pdf */; };
 		05A5E0EB2138431100D7A08E /* SimpleTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5E0EA2138431100D7A08E /* SimpleTween.m */; };
 		05A5E0EF2138554000D7A08E /* mars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0EE2138554000D7A08E /* mars.pdf */; };
+		4C60197E21419CAC00695ED0 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60197B21419CAB00695ED0 /* DragView.m */; };
+		4C60197F21419CAC00695ED0 /* SimpleTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60197D21419CAB00695ED0 /* SimpleTimeline.m */; };
 		FAA2886520DD409B00F23485 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA2886420DD409B00F23485 /* AppDelegate.m */; };
 		FAA2886820DD409B00F23485 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA2886720DD409B00F23485 /* ViewController.m */; };
 		FAA2886D20DD409D00F23485 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA2886C20DD409D00F23485 /* Assets.xcassets */; };
@@ -133,6 +135,10 @@
 		05A5E0E92138431100D7A08E /* SimpleTween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTween.h; sourceTree = "<group>"; };
 		05A5E0EA2138431100D7A08E /* SimpleTween.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTween.m; sourceTree = "<group>"; };
 		05A5E0EE2138554000D7A08E /* mars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mars.pdf; sourceTree = "<group>"; };
+		4C60197921419CAB00695ED0 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
+		4C60197B21419CAB00695ED0 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
+		4C60197C21419CAB00695ED0 /* SimpleTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTimeline.h; sourceTree = "<group>"; };
+		4C60197D21419CAB00695ED0 /* SimpleTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTimeline.m; sourceTree = "<group>"; };
 		FAA2886020DD409B00F23485 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA2886320DD409B00F23485 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FAA2886420DD409B00F23485 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -255,6 +261,10 @@
 		FACB8E6120DD415A006FD80B /* Samples */ = {
 			isa = PBXGroup;
 			children = (
+				4C60197921419CAB00695ED0 /* DragView.h */,
+				4C60197B21419CAB00695ED0 /* DragView.m */,
+				4C60197C21419CAB00695ED0 /* SimpleTimeline.h */,
+				4C60197D21419CAB00695ED0 /* SimpleTimeline.m */,
 				05A5E0E92138431100D7A08E /* SimpleTween.h */,
 				05A5E0EA2138431100D7A08E /* SimpleTween.m */,
 				053F9AC52139B16E002335A0 /* TweenHandlers.h */,
@@ -420,10 +430,12 @@
 				055611C5212DD12C00515AA9 /* ScrollAims.m in Sources */,
 				059B06C5210F821600AA0D43 /* TouchPoint.m in Sources */,
 				059B06C4210F821600AA0D43 /* AnimateText.m in Sources */,
+				4C60197E21419CAC00695ED0 /* DragView.m in Sources */,
 				FAA2886820DD409B00F23485 /* ViewController.m in Sources */,
 				059B06C3210F821600AA0D43 /* TimelineBasic.m in Sources */,
 				059B06C1210F821600AA0D43 /* WindBlow.m in Sources */,
 				055611A02126F82F00515AA9 /* PathLoop.m in Sources */,
+				4C60197F21419CAC00695ED0 /* SimpleTimeline.m in Sources */,
 				FAA2887320DD409D00F23485 /* main.m in Sources */,
 				055611C8212DD14300515AA9 /* AnimateArcRadius.m in Sources */,
 				FAA2886520DD409B00F23485 /* AppDelegate.m in Sources */,

@@ -26,6 +26,8 @@
 typedef struct{float f;}floatStruct;
 
 @interface Equations : NSObject
+//TODO:Use blocks, rename to "Ease.h"
++(double)none;
 
 +(floatStruct) easeNone:(float)t begin:(float)b change:(float)c duration:(float)d;
 

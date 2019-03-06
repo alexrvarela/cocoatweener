@@ -345,6 +345,8 @@ static BOOL autoOverwrite = YES;
 
 +(BOOL)updateValues:(TweenControl*)tweenControl currentTime:(float)cTime//Add reverse time?
 {
+    //TODO:Use Ease.h
+    
     if (tweenControl == nil || tweenControl.tween.target == nil || tweenControl.tween.keys == nil) return NO;
     
     float* nv;// New value for each property
@@ -369,9 +371,7 @@ static BOOL autoOverwrite = YES;
             //Just set it to the final value
             nv = tProperty.valueComplete;
         } else
-        {
-            float returnedValue;
-            
+        {   
             nv = malloc(sizeof(float) * (tProperty.size));
             allocated = YES;
             
@@ -383,16 +383,8 @@ static BOOL autoOverwrite = YES;
                 b = tProperty.valueStart[indexFLoat];
                 c = tProperty.valueComplete[indexFLoat] - tProperty.valueStart[indexFLoat];
                 
-                NSInvocation *invocation = tweenControl.invocation;
-                
-                [invocation setArgument:&t atIndex:2];
-                [invocation setArgument:&b atIndex:3];
-                [invocation setArgument:&c atIndex:4];
-                [invocation setArgument:&d atIndex:5];
-                
-                [invocation retainArguments];
-                [invocation invoke];
-                [invocation getReturnValue:&returnedValue];
+                //Apply equation formula
+                double returnedValue = tweenControl.tween.ease(t, b, c, d);
                 
                 if (isnan(returnedValue))
                     nv[indexFLoat] = tProperty.valueComplete[indexFLoat];

@@ -11,13 +11,12 @@
 
 typedef void (^TweenHandler)(void);
 
-//TODO: rename to Tween
 @interface Tween : NSObject
 
 @property float duration;
 @property (strong) id target;
 @property (strong) NSDictionary* keys;
-@property kEase ease;
+@property Equation ease;
 
 @property (strong) TweenHandler onStartHandler;
 @property (strong) TweenHandler onUpdateHandler;
@@ -28,12 +27,12 @@ typedef void (^TweenHandler)(void);
 @property BOOL overwrite;
 
 //init with required parameters (4)
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys;
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys;
 
 //init with delay
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys delay:(float)delay;
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys delay:(float)delay;
 
 //init with delay and completion handler
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys delay:(float)delay completion:(TweenHandler)completion;
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys delay:(float)delay completion:(TweenHandler)completion;
 
 @end

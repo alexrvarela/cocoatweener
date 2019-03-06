@@ -43,7 +43,7 @@
 //        //Instance show text tween
 //        self.showText = [[Tween alloc] init:self
 //                                   duration:0.15f
-//                                       ease:kEaseNone
+//                                       ease:Ease.none
 //                                       keys:[NSDictionary dictionaryWithObjectsAndKeys:
 //                                             [NSNumber numberWithFloat:1.0f], @"interpolation",
 //                                             nil]
@@ -57,7 +57,7 @@
 //        //Instance hide text tween
 //        self.hideText = [[Tween alloc] init:self
 //                          duration:0.25f
-//                              ease:kEaseNone
+//                              ease:Ease.none
 //                              keys:[NSDictionary dictionaryWithObjectsAndKeys:
 //                                    [NSNumber numberWithFloat:0.0f], @"interpolation",
 //                                    nil]
@@ -110,7 +110,7 @@
     [CocoaTweener removeTweens:self.aim];//remove
     [CocoaTweener addTween:[[Tween alloc] init:self.aim
                                       duration:0.5f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:1.0f], @"interpolation",
                                                 nil]

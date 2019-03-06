@@ -61,17 +61,17 @@
     int count  = (int)self.subviews.count;
     for(UIView* v in self.subviews)
     {
-        [CocoaTweener removeTweens:v];//remove existing tweens
+        //Remove existing tweens
+        [CocoaTweener removeTweens:v];
         
         Tween *tween = [[Tween alloc] init:v
                                   duration:2.0f
-                                      ease:kEaseOutElastic
+                                      ease:Ease.outElastic
                                       keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                             [NSValue valueWithCGPoint:p], @"center",
                                             nil]
                                      delay:0.025f * count
                         ];
-        
         [CocoaTweener addTween:tween];
         count--;
     }

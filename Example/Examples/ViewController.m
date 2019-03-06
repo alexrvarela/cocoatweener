@@ -27,6 +27,7 @@
 #import "TweenHandlers.h"
 #import "DragView.h"
 #import "SimpleTimeline.h"
+#import "EaseCurves.h"
 
 @interface ViewController ()
 
@@ -39,7 +40,7 @@
     self = [super init];
     
     if (self)
-    {
+    {   
         self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.view.backgroundColor = [UIColor clearColor];
         
@@ -73,6 +74,7 @@
         
         [self.container addSubview:[[SimpleTween alloc] initWithFrame:contentFrame]];
         [self.container addSubview:[[TweenHandlers alloc] initWithFrame:contentFrame]];
+        [self.container addSubview:[[EaseCurves alloc] initWithFrame:contentFrame]];
         [self.container addSubview:[[TouchPoint alloc] initWithFrame:contentFrame]];
         [self.container addSubview:[[DragView alloc] initWithFrame:contentFrame]];
         [self.container addSubview:[[PauseTweens alloc] initWithFrame:contentFrame]];
@@ -115,7 +117,7 @@
     [CocoaTweener removeTweens:self.view];//TODO: remove for key
     [CocoaTweener addTween:[[Tween alloc] init:self.container
                                       duration:0.5f
-                                          ease:kEaseOutCubic
+                                          ease:Ease.outCubic
                                           keys:@{
                                                  @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                  }

@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <objc/runtime.h>
-#import "Equations.h"
 #import "KVCUtils.h"
 
 @implementation KVCUtils
@@ -56,7 +55,7 @@
     
     return size;
 }
-
+//TODO:Move to TweenValues and return double type
 +(float*)getFloats:(id)value
 {
     NSString * typeString = [self getTypeString:value];

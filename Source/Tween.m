@@ -11,7 +11,7 @@
 @implementation Tween
 
 //default initializer
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys;
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys;
 {
     self = [super init];
     
@@ -28,9 +28,9 @@
     return self;
 }
 
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys delay:(float)delay
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys delay:(float)delay
 {
-    self =  [self init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys];
+    self =  [self init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys];
     
     if (self)
     {
@@ -41,9 +41,9 @@
 }
 
 //TODO: define useful initializers
--(id)init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys delay:(float)delay completion:(TweenHandler)completion
+-(id)init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys delay:(float)delay completion:(TweenHandler)completion
 {
-    self = [self init:(id)target duration:(float)duration ease:(kEase)ease keys:(NSDictionary*)keys delay:delay];
+    self = [self init:(id)target duration:(float)duration ease:(Equation)ease keys:(NSDictionary*)keys delay:delay];
     
     if (self)
     {
@@ -53,12 +53,10 @@
     return self;
 }
 
+/*
 -(void)dealloc
 {
-    //printf("tween released\n");
-}
-
-//TODO:init with completion and start handlers
-//TODO:init with all handlers
+    printf("tween released\n");
+}//*/
 
 @end

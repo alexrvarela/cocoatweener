@@ -124,7 +124,7 @@
                                                                             view.frame.size.height)];
             [CocoaTweener addTween:[[Tween alloc] init:view
                                               duration:0.25f
-                                                  ease:kEaseOutQuad
+                                                  ease:Ease.outQuad
                                                   keys:@{@"frame" : destinationFrame}]];
         }
         

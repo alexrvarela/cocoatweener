@@ -94,7 +94,7 @@
     
     [CocoaTweener addTween:[[Tween alloc] init:self.tweenPath
                                       duration:2.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:1.0f], @"interpolation",
                                                 nil]

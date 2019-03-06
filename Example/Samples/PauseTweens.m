@@ -104,7 +104,7 @@
     
     [CocoaTweener addTween:[[Tween alloc] init:self.clouds1
                                       duration:6.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:@{
                                                  @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                  }
@@ -126,7 +126,7 @@
     
     [CocoaTweener addTween:[[Tween alloc] init:self.clouds2
                                       duration:4.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:@{
                                                  @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                  }
@@ -147,7 +147,7 @@
     
     [CocoaTweener addTween:[[Tween alloc] init:self.clouds3
                                       duration:2.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:@{
                                                  @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                  }

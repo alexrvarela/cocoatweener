@@ -53,7 +53,7 @@
     //Create tween
     Tween* tween = [[Tween alloc] init:self.view//Target
                               duration:1.0f//One second
-                                  ease:kEaseInOutCubic//Transition
+                                  ease:Ease.inOutCubic//Transition
                                   keys:@{@"frame" : [NSValue valueWithCGRect:CGRectMake(250.0f, 20.0f, 50.0f, 50.0f)],
                                          }
                     delay:1.0f//One second delay

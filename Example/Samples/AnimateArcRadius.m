@@ -118,7 +118,7 @@
     [CocoaTweener removeTweens:self.aim];
     [CocoaTweener addTween:[[Tween alloc] init:self.aim
                                       duration:0.1f
-                                          ease:kEaseOutQuad
+                                          ease:Ease.outQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:radius], @"radius",
                                                 nil]
@@ -133,7 +133,7 @@
     [CocoaTweener removeTweens:self.eyeLipTop];
     [CocoaTweener addTween:[[Tween alloc] init:self.eyeLipTop
                                       duration:0.1f
-                                          ease:kEaseOutQuad
+                                          ease:Ease.outQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSValue valueWithCGRect: topFrame], @"frame",
                                                 nil]
@@ -144,7 +144,7 @@
     [CocoaTweener removeTweens:self.eyeLipBottom];
     [CocoaTweener addTween:[[Tween alloc] init:self.eyeLipBottom
                                       duration:0.1f
-                                          ease:kEaseOutQuad
+                                          ease:Ease.outQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSValue valueWithCGRect:bottomFrame], @"frame",
                                                 nil]
@@ -226,7 +226,7 @@
     printf("\ntop lip delay sleep\n");
     [CocoaTweener addTween:[[Tween alloc] init:self.eyeLipTop
                                       duration:0.25f
-                                          ease:kEaseOutQuad
+                                          ease:Ease.outQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSValue valueWithCGRect: self.closedTop], @"frame",
                                                 nil]

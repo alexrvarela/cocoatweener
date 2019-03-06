@@ -25,9 +25,7 @@ kTweenState;
 
 //Target
 @property (strong, nonatomic) Tween* tween;
-//Transition
-@property (strong) NSInvocation *invocation;
-@property (strong) NSDictionary *transitionParams;
+//Keypaths
 @property (strong) NSDictionary<NSString*, TweenValues*> * properties;
 //Time
 @property (nonatomic) float timeStart;

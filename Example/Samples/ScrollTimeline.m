@@ -79,7 +79,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.fire
                                            duration:0.25f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -94,7 +94,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.sun
                                            duration:1.0
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -109,7 +109,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.moon
                                            duration:1.0f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -124,7 +124,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.earth
                                            duration:2.5f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -142,7 +142,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.spaceman
                                            duration:1.0f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -161,7 +161,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.comet
                                            duration:1.0f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -180,7 +180,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.mars
                                            duration:1.0f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -199,7 +199,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.ufo
                                            duration:0.75f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -218,7 +218,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.jupyter
                                            duration:1.5f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }
@@ -236,7 +236,7 @@
         
         [self.timeline addTween:[[Tween alloc] init:self.saturn
                                            duration:1.5f
-                                               ease:kEaseNone
+                                               ease:Ease.none
                                                keys:@{
                                                       @"frame":[NSValue valueWithCGRect:nFrame],//Add key with destination value
                                                       }

@@ -54,7 +54,7 @@
     //Create tween
     Tween* tween = [[Tween alloc] init:self.view//Target
                               duration:1.0f//One second
-                                  ease:kEaseInOutCubic//Transition
+                                  ease:Ease.inOutCubic//Transition
                                   keys:@{@"alpha" : [NSNumber numberWithFloat:1.0f],
                                          @"frame" : [NSValue valueWithCGRect:CGRectMake(20.0f, 20.0f, 280.0f, 280.0f)],
                                          @"backgroundColor" : [UIColor blueColor]

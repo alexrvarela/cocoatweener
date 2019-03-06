@@ -68,7 +68,7 @@
     
     [CocoaTweener addTween:[[Tween alloc] init:self.rotation
                                       duration:random * 2.0f
-                                          ease:kEaseInOutQuad
+                                          ease:Ease.inOutQuad
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:random], @"distance",
                                                 nil]

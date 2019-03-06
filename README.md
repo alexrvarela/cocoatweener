@@ -73,7 +73,7 @@ Create and add simple Tween:
 ```objc
 Tween* myTween = [[Tween alloc] init:myView
     duration:1.0f
-    ease:kEaseOutQuad
+    ease:Ease.outQuad
     keys:@{@"alpha" : @1.0f,
            @"frame" : [NSValue valueWithCGRect:CGRectMake(20.0f, 20.0f, 280.0f, 280.0f)],
            @"backgroundColor" : [UIColor blueColor]
@@ -234,7 +234,7 @@ myPathAim.interpolation = 0.0;
 
 Tween* myTween = [[Tween alloc] init:myPathAim
                                   duration:1.5f
-                                      ease:kEaseNone
+                                      ease:Ease.none
                                       keys:@{ @"interpolation" : @1.0f }
                         ];
 
@@ -258,7 +258,7 @@ myRotationAim.angle = 90.0f;
 
 Tween* myTween = [[Tween alloc] init:myRotationAim
                                   duration:1.5f
-                                      ease:kEaseInOutCubic
+                                      ease:Ease.inOutCubic
                                       keys:@{ @"angle" : @180.0f }
                         ];
 
@@ -278,7 +278,7 @@ myArcAim.arcAngle = 0.0f;
 
 Tween* myTween = [[Tween alloc] init:myArcAim
                                   duration:1.5f
-                                      ease:kEaseInOutCubic
+                                      ease:Ease.inOutCubic
                                       keys:@{ @"arcAngle" : @360.0f }
                         ];
 
@@ -299,7 +299,7 @@ myStringAim.interpolation = 0.0;
 
 Tween* myTween = [[Tween alloc] init:myStringAim
                                   duration:1.5f
-                                      ease:kEaseNone
+                                      ease:Ease.none
                                       keys:@{ @"interpolation" : @1.0f }
                         ];
 

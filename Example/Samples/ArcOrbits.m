@@ -32,7 +32,7 @@
         timeline.playMode = kTimelinePlayModeLoop;
         [timeline addTween:[[Tween alloc] init:self.fireAim
                                       duration:5.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:-360.0f], @"angle",
                                                 nil]
@@ -52,7 +52,7 @@
         timeline1.playMode = kTimelinePlayModeLoop;
         [timeline1 addTween:[[Tween alloc] init:self.earthAim
                                       duration:5.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:360.0f], @"arcAngle",
                                                 nil]
@@ -72,7 +72,7 @@
         timeline2.playMode = kTimelinePlayModeLoop;
         [timeline2 addTween:[[Tween alloc] init:self.moonAim
                                       duration:1.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:360.0f], @"arcAngle",
                                                 nil]
@@ -93,7 +93,7 @@
         timeline3.playMode = kTimelinePlayModeLoop;
         [timeline3 addTween:[[Tween alloc] init:self.marsAim
                                        duration:7.0f
-                                           ease:kEaseNone
+                                           ease:Ease.none
                                            keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                  [NSNumber numberWithFloat:360.0f], @"arcAngle",
                                                  nil]
@@ -110,7 +110,7 @@
         timeline4.playMode = kTimelinePlayModeLoop;
         [timeline4 addTween:[[Tween alloc] init:self.jupyterAim
                                       duration:9.0f
-                                          ease:kEaseNone
+                                          ease:Ease.none
                                           keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                 [NSNumber numberWithFloat:360.0f], @"arcAngle",
                                                 nil]
@@ -126,7 +126,7 @@
         timeline5.playMode = kTimelinePlayModeLoop;
         [timeline5 addTween:[[Tween alloc] init:self.saturnAim
                                        duration:11.0f
-                                           ease:kEaseNone
+                                           ease:Ease.none
                                            keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                                  [NSNumber numberWithFloat:360.0f], @"arcAngle",
                                                  nil]

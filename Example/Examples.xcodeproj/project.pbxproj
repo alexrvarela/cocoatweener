@@ -34,6 +34,9 @@
 		05A5E0E82137893100D7A08E /* little-sun-fire.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0E62137893000D7A08E /* little-sun-fire.pdf */; };
 		05A5E0EB2138431100D7A08E /* SimpleTween.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5E0EA2138431100D7A08E /* SimpleTween.m */; };
 		05A5E0EF2138554000D7A08E /* mars.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05A5E0EE2138554000D7A08E /* mars.pdf */; };
+		05ED0D63222306790000AAE0 /* EaseCurves.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED0D62222306790000AAE0 /* EaseCurves.m */; };
+		05ED0D67222307970000AAE0 /* CustomEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED0D66222307970000AAE0 /* CustomEase.m */; };
+		05ED0D6A2223100C0000AAE0 /* CurveInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED0D692223100C0000AAE0 /* CurveInspector.m */; };
 		4C60197E21419CAC00695ED0 /* DragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60197B21419CAB00695ED0 /* DragView.m */; };
 		4C60197F21419CAC00695ED0 /* SimpleTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C60197D21419CAB00695ED0 /* SimpleTimeline.m */; };
 		4CBE923621419F580008BCEA /* card.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 4CBE923421419F580008BCEA /* card.pdf */; };
@@ -136,6 +139,12 @@
 		05A5E0E92138431100D7A08E /* SimpleTween.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTween.h; sourceTree = "<group>"; };
 		05A5E0EA2138431100D7A08E /* SimpleTween.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTween.m; sourceTree = "<group>"; };
 		05A5E0EE2138554000D7A08E /* mars.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mars.pdf; sourceTree = "<group>"; };
+		05ED0D61222306790000AAE0 /* EaseCurves.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EaseCurves.h; sourceTree = "<group>"; };
+		05ED0D62222306790000AAE0 /* EaseCurves.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EaseCurves.m; sourceTree = "<group>"; };
+		05ED0D65222307970000AAE0 /* CustomEase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomEase.h; sourceTree = "<group>"; };
+		05ED0D66222307970000AAE0 /* CustomEase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomEase.m; sourceTree = "<group>"; };
+		05ED0D682223100C0000AAE0 /* CurveInspector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CurveInspector.h; sourceTree = "<group>"; };
+		05ED0D692223100C0000AAE0 /* CurveInspector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CurveInspector.m; sourceTree = "<group>"; };
 		4C60197921419CAB00695ED0 /* DragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragView.h; sourceTree = "<group>"; };
 		4C60197B21419CAB00695ED0 /* DragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragView.m; sourceTree = "<group>"; };
 		4C60197C21419CAB00695ED0 /* SimpleTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTimeline.h; sourceTree = "<group>"; };
@@ -292,6 +301,12 @@
 				055611C4212DD12C00515AA9 /* ScrollAims.m */,
 				055611C6212DD14300515AA9 /* AnimateArcRadius.h */,
 				055611C7212DD14300515AA9 /* AnimateArcRadius.m */,
+				05ED0D61222306790000AAE0 /* EaseCurves.h */,
+				05ED0D62222306790000AAE0 /* EaseCurves.m */,
+				05ED0D682223100C0000AAE0 /* CurveInspector.h */,
+				05ED0D692223100C0000AAE0 /* CurveInspector.m */,
+				05ED0D65222307970000AAE0 /* CustomEase.h */,
+				05ED0D66222307970000AAE0 /* CustomEase.m */,
 				FACB8E6C20DD415A006FD80B /* Assets */,
 			);
 			path = Samples;
@@ -429,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05ED0D67222307970000AAE0 /* CustomEase.m in Sources */,
 				FACB8E8720DD415A006FD80B /* PauseTweens.m in Sources */,
 				FACB8E8520DD415A006FD80B /* AssetSample.m in Sources */,
 				055611C5212DD12C00515AA9 /* ScrollAims.m in Sources */,
@@ -439,6 +455,7 @@
 				059B06C3210F821600AA0D43 /* TimelineBasic.m in Sources */,
 				059B06C1210F821600AA0D43 /* WindBlow.m in Sources */,
 				055611A02126F82F00515AA9 /* PathLoop.m in Sources */,
+				05ED0D63222306790000AAE0 /* EaseCurves.m in Sources */,
 				4C60197F21419CAC00695ED0 /* SimpleTimeline.m in Sources */,
 				FAA2887320DD409D00F23485 /* main.m in Sources */,
 				055611C8212DD14300515AA9 /* AnimateArcRadius.m in Sources */,
@@ -447,6 +464,7 @@
 				055611BE212DC7DB00515AA9 /* ArcOrbits.m in Sources */,
 				053F9AC72139B16E002335A0 /* TweenHandlers.m in Sources */,
 				05A5E0EB2138431100D7A08E /* SimpleTween.m in Sources */,
+				05ED0D6A2223100C0000AAE0 /* CurveInspector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,8 @@
 #import "TweenControl.h"
 #import "Tween.h"
 #import "KVCUtils.h"
-#import "Equations.h"
+//#import "Equations.h"//DEPRECATED
+#import "Ease.h"
 #import "CocoaTweener.h"
 
 @implementation TweenControl
@@ -59,14 +60,8 @@
 
 -(void)setupController
 {
-    //set properties
+    //Set properties
     [self setKeys:self.tween.keys];
-    
-    //build invocation
-    NSInvocation *invocation = nil;
-    invocation = [KVCUtils buildInvocation:easeToString(self.tween.ease) fromClass:@"Equations"];
-    if(invocation == nil)printf("Warning : invalid transition ease\n");
-    self.invocation = invocation;
 }
 
 -(void)setTimeStart:(float)timeStart
@@ -177,9 +172,11 @@
     self.properties = nProperties;
 }
 
+/*
 -(void)dealloc
 {
-    //printf("controller released\n");
+    printf("controller released\n");
 }
+//*/
 
 @end

@@ -31,7 +31,7 @@
         self.timeline = [[Timeline alloc] init];
         [self.timeline addTween:[[Tween alloc] init:self.circle
                                            duration:1.5f
-                                               ease:kEaseOutBounce
+                                               ease:Ease.outBounce
                                                keys:@{@"frame" : [NSValue valueWithCGRect:CGRectMake(self.circle.frame.origin.x,
                                                                                                      self.frame.size.height -self.circle.frame.size.height - 20.0f,
                                                                                                      self.circle.frame.size.width,

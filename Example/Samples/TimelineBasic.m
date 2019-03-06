@@ -116,7 +116,7 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
     
     Tween* tween = [[Tween alloc] init:self.asset1
                               duration:1.0
-                                  ease:kEaseOutQuad
+                                  ease:Ease.outQuad
                                   keys:keys
                     ];
     
@@ -140,7 +140,7 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
     //Make tween parameters for each target
     tween = [[Tween alloc] init:self.asset2
                        duration:1.0
-                           ease:kEaseInOutBounce
+                           ease:Ease.inOutBounce
                            keys:keys
              ];
     
@@ -151,7 +151,7 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
     
     tween = [[Tween alloc] init:self.asset3
                        duration:1.0
-                           ease:kEaseOutQuad
+                           ease:Ease.outQuad
                            keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                  [NSNumber numberWithFloat:1.0f], @"rotationAngle",
                                  nil]
@@ -168,7 +168,7 @@ static inline CGPathRef makePolygon(int divisions, float radius, CGPoint origin)
     //Tween 4
     tween = [[Tween alloc] init:self.asset4
                               duration:1.0
-                                  ease:kEaseOutElastic
+                                  ease:Ease.outElastic
                                   keys:[NSDictionary dictionaryWithObjectsAndKeys:
                                         [NSValue valueWithCGRect:newFrame], @"frame",
                                         nil]

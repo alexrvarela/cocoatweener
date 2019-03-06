@@ -2,79 +2,97 @@
 //  Ease.h
 //  CocoaTweener
 //
-//  Created by Alejandro Ramirez Varela on 3/2/18.
-//  Copyright © 2018 Alejandro Ramirez Varela. All rights reserved.
+//  Created by Alejandro Ramirez Varela on 2/23/19.
+//  Copyright © 2019 alexrvarela. All rights reserved.
 //
 
-#ifndef Ease_h
-#define Ease_h
+#import <Foundation/Foundation.h>
 
-//TODO:define as mutable array to support custom eases
-#define EASE_STRINGS @[@"easeNone",@"easeInQuad",@"easeOutQuad",@"easeInOutQuad",@"easeOutInQuad",@"easeInCubic", @"easeOutCubic",@"easeInOutCubic",@"easeOutInCubic",@"easeInQuart",@"easeOutQuart",@"easeInOutQuart",@"easeOutInQuart",@"easeInQuint",@"easeOutQuint",@"easeInOutQuint",@"easeOutInQuint",@"easeInSine",@"easeOutSine",@"easeInOutSine",@"easeOutInSine",@"easeInExpo",@"easeOutExpo",@"easeInOutExpo",@"easeOutInExpo",@"easeInCirc",@"easeOutCirc",@"easeInOutCirc",@"easeOutInCirc",@"easeInElastic",@"easeOutElastic",@"easeInOutElastic",@"easeOutInElastic",@"easeInBack",@"easeOutBack",@"easeInOutBack",@"easeOutInBack",@"easeInBounce",@"easeOutBounce",@"easeInOutBounce",@"easeOutInBounce"]
+@interface Ease : NSObject
 
-//TODO:support and register custom esaes
-typedef enum
-{
-    kEaseNone,
-    kEaseInQuad,
-    kEaseOutQuad,
-    kEaseInOutQuad,
-    kEaseOutInQuad,
-    kEaseInCubic,
-    kEaseOutCubic,
-    kEaseInOutCubic,
-    kEaseOutInCubic,
-    
-    kEaseInQuart,
-    kEaseOutQuart,
-    kEaseInOutQuart,
-    kEaseOutInQuart,
-    
-    kEaseInQuint,
-    kEaseOutQuint,
-    kEaseInOutQuint,
-    kEaseOutInQuint,
-    
-    kEaseInSine,
-    kEaseOutSine,
-    kEaseInOutSine,
-    kEaseOutInSine,
-    
-    kEaseInExpo,
-    kEaseOutExpo,
-    kEaseInOutExpo,
-    kEaseOutInExpo,
-    
-    kEaseInCirc,
-    kEaseOutCirc,
-    kEaseInOutCirc,
-    kEaseOutInCirc,
-    
-    kEaseInElastic,
-    kEaseOutElastic,
-    kEaseInOutElastic,
-    kEaseOutInElastic,
-    
-    kEaseInBack,
-    kEaseOutBack,
-    kEaseInOutBack,
-    kEaseOutInBack,
-    
-    kEaseInBounce,
-    kEaseOutBounce,
-    kEaseInOutBounce,
-    kEaseOutInBounce
-    
-}kEase;
+/**
+ * Data type for equations.
+ *
+ * @param t        Current time (in frames or seconds).
+ * @param b        Starting value.
+ * @param c        Change needed in value.
+ * @param d        Expected easing duration (in frames or seconds).
+ * @return        The correct value.
+ */
+typedef double (^Equation)(double t, double b, double c, double d);
 
-static inline NSString* easeToString(kEase ease)
-{
-    if ((int)ease <= [EASE_STRINGS count] - 1)
-    {
-        return [EASE_STRINGS objectAtIndex:(int)ease];
-    }
-    return nil;
-}
+#pragma mark - None
 
-#endif /* Ease_h */
++(Equation)none;
 
+#pragma mark - Quad
+
++(Equation)inQuad;
++(Equation)outQuad;
++(Equation)inOutQuad;
++(Equation)outInQuad;
+
+#pragma mark - Cubic
+
++(Equation)inCubic;
++(Equation)outCubic;
++(Equation)inOutCubic;
++(Equation)outInCubic;
+
+#pragma mark - Quart
+
++(Equation)inQuart;
++(Equation)outQuart;
++(Equation)inOutQuart;
++(Equation)outInQuart;
+
+#pragma mark - Quint
+
++(Equation)inQuint;
++(Equation)outQuint;
++(Equation)inOutQuint;
++(Equation)outInQuint;
+
+#pragma mark - Sine
+
++(Equation)inSine;
++(Equation)outSine;
++(Equation)inOutSine;
++(Equation)outInSine;
+
+#pragma mark - Expo
+
++(Equation)inExpo;
++(Equation)outExpo;
++(Equation)inOutExpo;
++(Equation)outInExpo;
+
+#pragma mark - Circ
+
++(Equation)inCirc;
++(Equation)outCirc;
++(Equation)inOutCirc;
++(Equation)outInCirc;
+
+#pragma mark - Elastic
+
++(Equation)inElastic;
++(Equation)outElastic;
++(Equation)inOutElastic;
++(Equation)outInElastic;
+
+#pragma mark - Back
+
++(Equation)inBack;
++(Equation)outBack;
++(Equation)inOutBack;
++(Equation)outInBack;
+
+#pragma mark - Bounce
+
++(Equation)inBounce;
++(Equation)outBounce;
++(Equation)inOutBounce;
++(Equation)outInBounce;
+
+@end

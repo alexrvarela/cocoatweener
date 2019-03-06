@@ -185,9 +185,11 @@
     return  NO;
 }
 
+/*
 -(void)dealloc
 {
     printf("timeline released\n");
 }
+//*/
 
 @end

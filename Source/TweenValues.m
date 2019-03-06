@@ -10,7 +10,10 @@
 
 @implementation TweenValues
 
--(id)initWithStartValue:(float*)valuestart valueComplete:(float*)valuecomplete originalValueComplete:(float*)originalvaluecomplete floatSize:(int)floatSize
+-(id)initWithStartValue:(float*)valuestart
+          valueComplete:(float*)valuecomplete
+  originalValueComplete:(float*)originalvaluecomplete
+              floatSize:(int)floatSize
 {
     if ([super init])
     {
@@ -68,8 +71,6 @@
     {
         free(_valueComplete);
     }
-    //self.valueComplete;
-    //self.originalValueComplete;
 }
 
 @end

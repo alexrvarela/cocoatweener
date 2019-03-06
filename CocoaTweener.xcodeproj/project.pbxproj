@@ -21,19 +21,18 @@
 		059B069F210F7D8A00AA0D43 /* Tween.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90AE20DC159F00B6CD08 /* Tween.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059B06A1210F7D8F00AA0D43 /* Timeline.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90C420DC159F00B6CD08 /* Timeline.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059B06A4210F7DD000AA0D43 /* TweenControl.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90B120DC159F00B6CD08 /* TweenControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		059B06A7210F7DFC00AA0D43 /* Ease.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BA20DC159F00B6CD08 /* Ease.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059B06AA210F7E3800AA0D43 /* TweenValues.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BE20DC159F00B6CD08 /* TweenValues.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		059B06AC210F7E3800AA0D43 /* Equations.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90AF20DC159F00B6CD08 /* Equations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059B06AE210F7E3800AA0D43 /* TimelineInspector.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		059B06B2210F7E3800AA0D43 /* KVCUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAB90C520DC159F00B6CD08 /* KVCUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		05A5E0ED2138436900D7A08E /* BasicMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5E0EC2138436900D7A08E /* BasicMath.m */; };
+		05ED0D5D2221799E0000AAE0 /* Ease.h in Headers */ = {isa = PBXBuildFile; fileRef = 05ED0D5B2221799E0000AAE0 /* Ease.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05ED0D5E2221799E0000AAE0 /* Ease.m in Sources */ = {isa = PBXBuildFile; fileRef = 05ED0D5C2221799E0000AAE0 /* Ease.m */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		FA4C4E1420DC197E005FB15E /* TweenValues.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B020DC159F00B6CD08 /* TweenValues.m */; };
 		FA4C4E1620DC197E005FB15E /* TimelineInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */; };
 		FA4C4E1920DC197E005FB15E /* KVCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B520DC159F00B6CD08 /* KVCUtils.m */; };
 		FA4C4E1B20DC197E005FB15E /* Timeline.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B720DC159F00B6CD08 /* Timeline.m */; };
-		FA4C4E1D20DC197E005FB15E /* Equations.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90B920DC159F00B6CD08 /* Equations.m */; };
 		FA4C4E1F20DC197E005FB15E /* Tween.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90BB20DC159F00B6CD08 /* Tween.m */; };
 		FA4C4E2120DC197E005FB15E /* TweenControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90BD20DC159F00B6CD08 /* TweenControl.m */; };
 		FA4C4E2520DC197E005FB15E /* PDFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAAB90C120DC159F00B6CD08 /* PDFImageView.m */; };
@@ -57,6 +56,8 @@
 		055611AB2126FC0400515AA9 /* PathAim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathAim.h; sourceTree = "<group>"; };
 		055611BF212DC99400515AA9 /* BasicMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMath.h; sourceTree = "<group>"; };
 		05A5E0EC2138436900D7A08E /* BasicMath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicMath.m; sourceTree = "<group>"; };
+		05ED0D5B2221799E0000AAE0 /* Ease.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ease.h; sourceTree = "<group>"; };
+		05ED0D5C2221799E0000AAE0 /* Ease.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ease.m; sourceTree = "<group>"; };
 		29B9812B8F0C3A6CDA64081E /* CocoaTweener.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = CocoaTweener.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F5AE195388D20070C39A /* CocoaTweener_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaTweener_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		FA4C4E0C20DC193A005FB15E /* CocoaTweener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaTweener.h; sourceTree = "<group>"; };
 		FA4C4E0D20DC193A005FB15E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAAB90AE20DC159F00B6CD08 /* Tween.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tween.h; sourceTree = "<group>"; };
-		FAAB90AF20DC159F00B6CD08 /* Equations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Equations.h; sourceTree = "<group>"; };
 		FAAB90B020DC159F00B6CD08 /* TweenValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenValues.m; sourceTree = "<group>"; };
 		FAAB90B120DC159F00B6CD08 /* TweenControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweenControl.h; sourceTree = "<group>"; };
 		FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimelineInspector.m; sourceTree = "<group>"; };
@@ -78,8 +78,6 @@
 		FAAB90B620DC159F00B6CD08 /* PDFImageRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFImageRender.h; sourceTree = "<group>"; };
 		FAAB90B720DC159F00B6CD08 /* Timeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timeline.m; sourceTree = "<group>"; };
 		FAAB90B820DC159F00B6CD08 /* CocoaTweener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CocoaTweener.h; sourceTree = "<group>"; };
-		FAAB90B920DC159F00B6CD08 /* Equations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Equations.m; sourceTree = "<group>"; };
-		FAAB90BA20DC159F00B6CD08 /* Ease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ease.h; sourceTree = "<group>"; };
 		FAAB90BB20DC159F00B6CD08 /* Tween.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tween.m; sourceTree = "<group>"; };
 		FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimelineInspector.h; sourceTree = "<group>"; };
 		FAAB90BD20DC159F00B6CD08 /* TweenControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweenControl.m; sourceTree = "<group>"; };
@@ -172,6 +170,8 @@
 			children = (
 				FAAB90B820DC159F00B6CD08 /* CocoaTweener.h */,
 				FAAB90C220DC159F00B6CD08 /* CocoaTweener.m */,
+				05ED0D5B2221799E0000AAE0 /* Ease.h */,
+				05ED0D5C2221799E0000AAE0 /* Ease.m */,
 				FAAB90AE20DC159F00B6CD08 /* Tween.h */,
 				FAAB90BB20DC159F00B6CD08 /* Tween.m */,
 				FAAB90C420DC159F00B6CD08 /* Timeline.h */,
@@ -180,8 +180,6 @@
 				FAAB90BD20DC159F00B6CD08 /* TweenControl.m */,
 				FAAB90BE20DC159F00B6CD08 /* TweenValues.h */,
 				FAAB90B020DC159F00B6CD08 /* TweenValues.m */,
-				FAAB90AF20DC159F00B6CD08 /* Equations.h */,
-				FAAB90B920DC159F00B6CD08 /* Equations.m */,
 				FAAB90BC20DC159F00B6CD08 /* TimelineInspector.h */,
 				FAAB90B220DC159F00B6CD08 /* TimelineInspector.m */,
 				055611BF212DC99400515AA9 /* BasicMath.h */,
@@ -202,7 +200,6 @@
 				FAAB90C120DC159F00B6CD08 /* PDFImageView.m */,
 				FAAB90C520DC159F00B6CD08 /* KVCUtils.h */,
 				FAAB90B520DC159F00B6CD08 /* KVCUtils.m */,
-				FAAB90BA20DC159F00B6CD08 /* Ease.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -219,8 +216,6 @@
 				FADA4FA320EAC05700948A44 /* PDFImageView.h in Headers */,
 				059B06A1210F7D8F00AA0D43 /* Timeline.h in Headers */,
 				059B069F210F7D8A00AA0D43 /* Tween.h in Headers */,
-				059B06A7210F7DFC00AA0D43 /* Ease.h in Headers */,
-				059B06AC210F7E3800AA0D43 /* Equations.h in Headers */,
 				055611B12126FC0400515AA9 /* StringAim.h in Headers */,
 				055611B32126FC0400515AA9 /* ArcAim.h in Headers */,
 				055611AF2126FC0400515AA9 /* RotationAim.h in Headers */,
@@ -230,6 +225,7 @@
 				059B06A4210F7DD000AA0D43 /* TweenControl.h in Headers */,
 				059B06AA210F7E3800AA0D43 /* TweenValues.h in Headers */,
 				055611C0212DC99400515AA9 /* BasicMath.h in Headers */,
+				05ED0D5D2221799E0000AAE0 /* Ease.h in Headers */,
 				059B06B2210F7E3800AA0D43 /* KVCUtils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,11 +368,11 @@
 				FA4C4E2120DC197E005FB15E /* TweenControl.m in Sources */,
 				FA4C4E1420DC197E005FB15E /* TweenValues.m in Sources */,
 				055611AC2126FC0400515AA9 /* BezierPathUtils.m in Sources */,
-				FA4C4E1D20DC197E005FB15E /* Equations.m in Sources */,
 				FA4C4E1620DC197E005FB15E /* TimelineInspector.m in Sources */,
 				FA4C4E2720DC197E005FB15E /* PDFImageRender.m in Sources */,
 				FA4C4E2520DC197E005FB15E /* PDFImageView.m in Sources */,
 				FA4C4E1920DC197E005FB15E /* KVCUtils.m in Sources */,
+				05ED0D5E2221799E0000AAE0 /* Ease.m in Sources */,
 				055611AD2126FC0400515AA9 /* PathAim.m in Sources */,
 				055611B02126FC0400515AA9 /* RotationAim.m in Sources */,
 			);

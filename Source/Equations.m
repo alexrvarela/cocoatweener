@@ -29,6 +29,9 @@
 
 @implementation Equations
 
++ (double)none{return 1.0;}
+
+
 /**
  * Easing equation function for a simple linear tweening, with no easing.
  *
@@ -169,7 +172,6 @@
  * @return		The correct value.
  */
 +(floatStruct) easeOutInCubic:(float)t begin:(float)b change:(float)c duration:(float)d{
-
 	if (t < d/2) return [self easeOutCubic:t*2 begin:b change:c/2 duration:d];
 	else return [self easeOutCubic:(t*2)-d begin:b+c/2 change:c/2 duration: d];
 }
